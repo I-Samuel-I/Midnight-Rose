@@ -8,9 +8,10 @@ export const GlobalStyle = createGlobalStyle`
 }  
 body,html{
     width: 100%;
-    overflow-y: hidden;
+    overflow-x: hidden;
     font-family: 'Assistant', sans-serif;
+    font-size: 16px;
     color: white;
-    background-color: #2D2D2F;
+    background-color: #1B1B1D;
 }
 `

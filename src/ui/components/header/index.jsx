@@ -1,9 +1,14 @@
 import Logo from "../logo";
-
+import Nav from "../nav";
+import * as S from "./style"
 export default function Header(){
     return(
-        <>
-        <Logo/>
-        </>
+        
+        <S.HeaderContainer>
+           <Logo/> 
+           <Nav/>
+        </S.HeaderContainer>
+        
+      
     )
 }

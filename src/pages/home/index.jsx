@@ -1,10 +1,9 @@
 import Header from "../../ui/components/header";
-
-export default function Home(){
-    return(
-        <>
-        <Header/>
-        </> 
-    )
-    
+import * as S from "./style"
+export default function Home() {
+  return (
+    <S.MainContainer>
+      <Header />
+    </S.MainContainer>
+  );
 }
