@@ -16,5 +16,5 @@ export default function About() {
         </p>
       </article>
     </S.AboutContainer>
-  );
+  );  
 }

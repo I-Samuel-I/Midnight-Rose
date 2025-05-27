@@ -14,6 +14,13 @@ import utattemita from "../../../public/images/albums/ADO-ALBUM03.jpg";
 import adoShow from "../../../public/images/albums/ADO-ALBUM04.jpg"; 
 import zanmu from "../../../public/images/albums/ADO-ALBUM05.jpeg"; 
 import adoBest from "../../../public/images/albums/ADO-ALBUM06.jpeg"; 
+import cubeUsseewa from "../../../public/images/cube/CUBE-USSEEWA.jpg";
+import cubeAishite from "../../../public/images/cube/CUBE-AISHITE.jpg";
+import cubeElf from "../../../public/images/cube/CUBE-ELF.jpeg";
+import cubeRebellion from "../../../public/images/cube/CUBE-REBELLION.jpeg";
+import cubeRockstar from "../../../public/images/cube/CUBE-ROCKSTAR.png";
+import cubeRule from "../../../public/images/cube/CUBE-RULE.jpg";
 export { 
-    logo, github,linkedin, ado, odo, night, readymade, pierrot, show,himawari, kyougen, uta, utattemita, adoShow, zanmu, adoBest
+    logo, github,linkedin, ado, odo, night, readymade, pierrot, show,himawari, kyougen, uta, utattemita, adoShow, zanmu, adoBest,
+    cubeUsseewa, cubeAishite, cubeElf, cubeRebellion, cubeRockstar, cubeRule
 };
