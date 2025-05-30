@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContentContainer = styled.div`
+export const ContentContainer = styled.section`
   div {
     
     margin-bottom: 1%;

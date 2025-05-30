@@ -1,33 +1,73 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import * as img from "../../../../assets/images/index";
 import * as S from "./style";
 
 export default function Carrer() {
-  const [rotation, setRotation] = useState({ x: 0, y: 0 });
+ const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const isDragging = useRef(false);
   const lastPosition = useRef({ x: 0, y: 0 });
+  const velocity = useRef({ x: 0, y: 0 });
+  const animationFrameId = useRef(null);
 
   const handleMouseDown = (e) => {
     isDragging.current = true;
     lastPosition.current = { x: e.clientX, y: e.clientY };
+    if (animationFrameId.current) {
+      cancelAnimationFrame(animationFrameId.current); // Para a inércia ao começar a arrastar de novo
+    }
   };
 
   const handleMouseMove = (e) => {
     if (!isDragging.current) return;
+
     const deltaX = e.clientX - lastPosition.current.x;
     const deltaY = e.clientY - lastPosition.current.y;
 
+    // Atualiza rotação
     setRotation((prev) => ({
-      x: prev.x - deltaY * 0.3,
-      y: prev.y - deltaX * 0.3,
+      x: prev.x - deltaY * 0.2,
+      y: prev.y - deltaX * 0.2,
     }));
+
+    // Guarda a velocidade do movimento para usar na inércia
+    velocity.current = { x: -deltaY * 0.2, y: -deltaX * 0.2 };
 
     lastPosition.current = { x: e.clientX, y: e.clientY };
   };
 
+  const applyInertia = () => {
+    // Aplica um "atrito" que vai reduzindo a velocidade até zero
+    velocity.current.x *= 0.95;
+    velocity.current.y *= 0.95;
+
+    // Atualiza a rotação somando a velocidade atual
+    setRotation((prev) => ({
+      x: prev.x + velocity.current.x,
+      y: prev.y + velocity.current.y,
+    }));
+
+    if (Math.abs(velocity.current.x) > 0.01 || Math.abs(velocity.current.y) > 0.01) {
+      animationFrameId.current = requestAnimationFrame(applyInertia);
+    }
+  };
+
   const handleMouseUp = () => {
     isDragging.current = false;
+    // Começa a inércia após o usuário soltar o mouse
+    applyInertia();
   };
+
+  useEffect(() => {
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseup", handleMouseUp);
+
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseup", handleMouseUp);
+      if (animationFrameId.current) cancelAnimationFrame(animationFrameId.current);
+    };
+  }, []);
+
 
   return (
     <S.CarrerContainer>
@@ -43,12 +83,8 @@ export default function Carrer() {
         </p>
       </article>
 
-      <S.Cube3DContainer
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp}
-        onMouseLeave={handleMouseUp}
-      >
+      <S.Test>
+          <S.Cube3DContainer onMouseDown={handleMouseDown}>
         <S.Cube3D>
           <S.OuterCube
             style={{
@@ -78,6 +114,8 @@ export default function Carrer() {
           </S.OuterCube>
         </S.Cube3D>
       </S.Cube3DContainer>
+      </S.Test>
+    
     </S.CarrerContainer>
   );
 }

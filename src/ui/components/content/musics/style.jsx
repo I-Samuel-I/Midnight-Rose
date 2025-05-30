@@ -10,10 +10,12 @@ export const MusicContainer = styled.section`
   figure {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    
   }
   img {
     width: 100%;
     display: block;
+    border: 1px solid black;
   }
   .ImageContainer {
     position: relative;

@@ -2,7 +2,7 @@ import * as img from "../../../../assets/images/index";
 import * as S from "./style";
 export default function Musics() {
   return (
-    <S.MusicContainer>
+    <S.MusicContainer id="works">
       <h1>MUSICS</h1>
       <figure>
         <div className="ImageContainer">

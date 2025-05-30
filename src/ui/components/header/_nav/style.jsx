@@ -14,7 +14,10 @@ export const NavContainer = styled.nav`
     list-style: none;
     font-family: "Assistant";
   }
-  li {
+  
+  a {
+    text-decoration: none;
+    color: white;
     &:hover {
       cursor: pointer;
       color: #014862;

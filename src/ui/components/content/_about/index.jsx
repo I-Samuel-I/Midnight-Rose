@@ -2,7 +2,7 @@ import * as img from "../../../../assets/images/index";
 import * as S from "./style";
 export default function About() {
   return (
-    <S.AboutContainer>
+    <S.AboutContainer id="about">
       <img src={img.ado} alt="Ado" />
       <article>
         <h1>EARLY CARRER</h1>

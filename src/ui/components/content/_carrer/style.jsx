@@ -13,13 +13,14 @@ export const CarrerContainer = styled.section`
   border: 2px solid #2d2d2f;
 
   img {
-    width: 300px;
+    width: 400px;
+    pointer-events: none;
   }
 
   article {
     padding: 10px;
     width: 50%;
-    margin: 1% 0% 0% 2%;
+    margin: 1% 0% 0% 3%;
     h1 {
       font-size: 5rem;
       margin-bottom: 2%;
@@ -31,13 +32,16 @@ export const CarrerContainer = styled.section`
   }
 `;
 
+export const Test = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-right: 12%;
+`;
+
 export const Cube3DContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
-  height: 30%;
-  border: solid 1px white;
   user-select: none;
 `;
 
@@ -50,8 +54,9 @@ export const OuterCube = styled.div`
 `;
 
 export const Cube = styled.div`
-  width: 300px;
-  height: 300px;
+  
+  width: 400px;
+  height: 400px;
   position: relative;
   transform-style: preserve-3d;
   animation: ${autoRotate} 20s linear infinite;
@@ -59,31 +64,37 @@ export const Cube = styled.div`
 
 export const Face = styled.div`
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background-color: rgb(53, 83, 165);
   color: white;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
+  backface-visibility: hidden;
 `;
 
 export const CubeFaceFront = styled(Face)`
-  transform: translateZ(150px);
+  transform: translateZ(200px);
 `;
+
 export const CubeFaceBack = styled(Face)`
-  transform: rotateY(180deg) translateZ(150px);
+  transform: rotateY(180deg) translateZ(200px);
 `;
+
 export const CubeFaceLeft = styled(Face)`
-  transform: rotateY(-90deg) translateZ(150px);
+  transform: rotateY(-90deg) translateZ(200px);
 `;
+
 export const CubeFaceRight = styled(Face)`
-  transform: rotateY(90deg) translateZ(150px);
+  transform: rotateY(90deg) translateZ(200px);
 `;
+
 export const CubeFaceTop = styled(Face)`
-  transform: rotateX(90deg) translateZ(150px);
+  transform: rotateX(90deg) translateZ(200px);
 `;
+
 export const CubeFaceBottom = styled(Face)`
-  transform: rotateX(-90deg) translateZ(150px);
+  transform: rotateX(-90deg) translateZ(200px);
 `;
