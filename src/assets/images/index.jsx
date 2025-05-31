@@ -1,6 +1,9 @@
+import svgArrowUp from "../../../public/images/svg/ArrowUp.svg";
 import logo from "../../../public/images/Logo.png";
 import github from "../../../public/images/socials/GITHUB-SOCIAL.png";
 import linkedin from "../../../public/images/socials/LINKEDIN-SOCIAL.png";
+import instagram from "../../../public/images/socials/INSTAGRAM-SOCIAL.png";
+import gmail from "../../../public/images/socials/GMAIL-SOCIAL.png";
 import ado from "../../../public/images/ADO.png";
 import odo from "../../../public/images/musics/ADO-ODO.jpg";
 import night from "../../../public/images/musics/ADO-NIGHT.jpg";
@@ -21,6 +24,7 @@ import cubeRebellion from "../../../public/images/cube/CUBE-REBELLION.jpeg";
 import cubeRockstar from "../../../public/images/cube/CUBE-ROCKSTAR.png";
 import cubeRule from "../../../public/images/cube/CUBE-RULE.jpg";
 export { 
-    logo, github,linkedin, ado, odo, night, readymade, pierrot, show,himawari, kyougen, uta, utattemita, adoShow, zanmu, adoBest,
-    cubeUsseewa, cubeAishite, cubeElf, cubeRebellion, cubeRockstar, cubeRule
+    logo, github,linkedin, instagram, gmail, ado, odo, night, readymade, pierrot, show,himawari, kyougen, uta, utattemita, adoShow, zanmu, adoBest,
+    cubeUsseewa, cubeAishite, cubeElf, cubeRebellion, cubeRockstar, cubeRule,
+    svgArrowUp
 };

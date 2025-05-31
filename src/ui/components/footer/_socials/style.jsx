@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const SocialsContainer = styled.div`
   div {
     display: flex;
-    gap: 1rem;
-    margin-top: 1%;
+    gap: 1.5rem;
+    margin-top: 1%; 
     img {
+     
       width: 2.5rem;
     }
     p{  

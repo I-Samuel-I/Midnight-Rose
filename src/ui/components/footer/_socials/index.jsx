@@ -11,6 +11,10 @@ export default function Socials() {
         <a href="https://github.com/I-Samuel-I" target="_blank">
           <img src={img.github} alt="GITHUB" />
         </a>
+         <a href="https://www.instagram.com/sam.pongp/" target="_blank">
+          <img src={img.instagram} alt="GITHUB" />
+        </a>
+
         </div>
         <div>
             <p>© 2025 by Samuel Gomes</p>
