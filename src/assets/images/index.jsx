@@ -1,4 +1,3 @@
-import svgArrowUp from "../../../public/images/svg/ArrowUp.svg";
 import logo from "../../../public/images/Logo.png";
 import github from "../../../public/images/socials/GITHUB-SOCIAL.png";
 import linkedin from "../../../public/images/socials/LINKEDIN-SOCIAL.png";
@@ -26,5 +25,4 @@ import cubeRule from "../../../public/images/cube/CUBE-RULE.jpg";
 export { 
     logo, github,linkedin, instagram, gmail, ado, odo, night, readymade, pierrot, show,himawari, kyougen, uta, utattemita, adoShow, zanmu, adoBest,
     cubeUsseewa, cubeAishite, cubeElf, cubeRebellion, cubeRockstar, cubeRule,
-    svgArrowUp
 };

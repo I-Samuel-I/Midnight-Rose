@@ -1,24 +1,45 @@
+import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import * as img from "../../../../assets/images/index";
 import * as S from "./style";
 export default function Nav() {
+  const [MenuDisplay, setMenuDisplay] = useState(false);
+
+  function handleMenu() {
+    setMenuDisplay((prev) => !prev);
+  }
+
   return (
     <>
       <S.NavContainer>
-        <ul>
-          <a href="https://github.com/I-Samuel-I" target="_blank">
-            <img src={img.github} alt="Github" />
-          </a>
-
-          <li>
-            <a href="#about"> ABOUT</a>
-          </li>
-          <li>
-            <a href="#works"> WORKS</a>
-          </li>
-          <li>
-            <a href="#contact">CONTACT</a>
-          </li>
-        </ul>
+        <a href="https://github.com/I-Samuel-I" target="_blank">
+          <img src={img.github} alt="Github" />
+        </a>
+        <li>
+          <S.DisplayButton onClick={handleMenu}>MENU</S.DisplayButton>
+          {MenuDisplay && (
+            <S.InfoMenu>
+              <ul>
+                <li>
+                  <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                  <a href="#musics">WORKS</a>
+                </li>
+                <li>
+                  <a href="#albums">ALBUMS</a>
+                </li>
+                <li>
+                  <a>CONTACT</a>
+                </li>
+              </ul>
+              <button onClick={handleMenu}>
+                <FontAwesomeIcon icon={faXmark} />
+              </button>
+            </S.InfoMenu>
+          )}
+        </li>
       </S.NavContainer>
     </>
   );

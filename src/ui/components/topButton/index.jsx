@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-
-import * as img from "../../../assets/images/index";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import * as S from "./style";
 
 export default function Top() {
@@ -31,7 +31,7 @@ export default function Top() {
       {showTop && (
         <S.ButtonContainer>
           <button onClick={scrollTop}>
-            <img src={img.svgArrowUp} alt="ArrowUp" />
+            <FontAwesomeIcon icon={faArrowUp} />
           </button>
         </S.ButtonContainer>
       )}

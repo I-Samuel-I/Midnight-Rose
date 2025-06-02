@@ -10,7 +10,6 @@ export const MusicContainer = styled.section`
   figure {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
   }
   img {
     width: 100%;
@@ -48,10 +47,31 @@ export const MusicContainer = styled.section`
       font-size: 4rem;
     }
     a {
+      display: flex;
+      justify-content: center;
+      width: 100%;
       font-size: 2rem;
       font-weight: bold;
-      color: white;
       text-decoration: none;
+      color: white;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        gap: 10px;
+        p {
+          font-size: 2.5rem;
+        }
+        svg {
+          width: 15%;
+          padding: 1px;
+          font-size: 1.5rem;
+          border-radius: 50px;
+          background-color: #1b1b1d;
+        }
+      }
     }
   }
   .ImageContainer:hover .Overlay {
@@ -69,9 +89,13 @@ export const LinkAdo = styled.div`
     text-decoration: none;
     color: white;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
       color: #014862;
+    }
+
+    svg {
+      color: white;
     }
   }
 `;

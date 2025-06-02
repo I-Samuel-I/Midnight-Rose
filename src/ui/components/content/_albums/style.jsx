@@ -31,7 +31,7 @@ export const AlbumsAside = styled.aside`
 `;
 export const AlbumsList = styled.figure`
   figure {
-    margin-bottom: 5%;
+    margin-top: 10%;
     img {
       width: 850px;
     }
