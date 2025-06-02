@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
 import Home from "../../pages/home";
+import AppRoutes from "../../routes";
 
 export default function Main() {
   useEffect(() => {
@@ -17,7 +18,9 @@ export default function Main() {
 
   return (
     <>
-      <Home />
+      <AppRoutes>
+        <Home />
+      </AppRoutes>
     </>
   );
 }
