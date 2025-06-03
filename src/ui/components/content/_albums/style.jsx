@@ -15,6 +15,7 @@ export const AlbumsAside = styled.aside`
   div {
     display: flex;
     flex-direction: column;
+    gap: 25px;
     margin: 10% 0% 0% 5%;
     a {
       font-size: 2.5rem;

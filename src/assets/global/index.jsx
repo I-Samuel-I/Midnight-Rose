@@ -4,6 +4,7 @@ import Home from "../../pages/home";
 import AppRoutes from "../../routes";
 
 export default function Main() {
+ 
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,

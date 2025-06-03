@@ -3,7 +3,7 @@ export default function Intro(){
     return(
         <>
         <S.IntroContainer>
-            <h1>ADO</h1>
+            <a href="https://www.youtube.com/@Ado1024" target="_blank">ADO</a>
         </S.IntroContainer>
         </>
     )

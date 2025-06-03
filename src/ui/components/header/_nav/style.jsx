@@ -13,6 +13,7 @@ export const NavContainer = styled.nav`
   font-family: "Assistant";
 
   a {
+    display: flex;
     text-decoration: none;
     color: white;
     &:hover {
@@ -21,12 +22,8 @@ export const NavContainer = styled.nav`
       /* color: #2f5974; */
       /* color: #3041bb; */
     }
-  }
-  a {
-    display: flex;
-
     img {
-      width: 40px;
+      width: 50px;
 
       &:hover {
         transform: scale(1.2);
@@ -34,10 +31,25 @@ export const NavContainer = styled.nav`
       }
     }
   }
+  @media (max-width: 768px) {
+    gap: 20px;
+    a {
+      img {
+        width: 45px;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    a {
+      img {
+        display: none;
+      }
+    }
+  }
 `;
 
 export const DisplayButton = styled.button`
-  width: 9vw;
+  width: 10vw;
   padding: 18px;
   border: solid 1px #4e4e4e;
   border-radius: 30px;
@@ -45,6 +57,17 @@ export const DisplayButton = styled.button`
   font-weight: bold;
   color: white;
   background-color: #1b1b1d;
+
+  @media (max-width: 1200px) {
+    width: 15vw;
+  }
+  @media (max-width: 768px) {
+    width: 20vw;
+  }
+  @media (max-width: 600px) {
+    width: 25vw;
+    padding: 10px;
+  }
 `;
 
 export const InfoMenu = styled.div`

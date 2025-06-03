@@ -15,5 +15,9 @@ body,html{
     font-size: 16px;
     color: white;
     background-color: #1B1B1D;
+
+    img{
+        pointer-events: none;
+    }
 }
 `

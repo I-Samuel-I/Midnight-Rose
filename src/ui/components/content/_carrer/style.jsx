@@ -14,7 +14,6 @@ export const CarrerContainer = styled.section`
 
   img {
     width: 400px;
-    pointer-events: none;
   }
 
   article {
@@ -29,6 +28,12 @@ export const CarrerContainer = styled.section`
       font-size: 2.5rem;
       font-weight: bold;
     }
+  }
+  @media (max-width: 992px) {
+    margin: 0% 2% 0% 2%;
+  }
+  @media (max-width: 600px) {
+    margin: 0% 3% 0% 3%;
   }
 `;
 
@@ -54,7 +59,6 @@ export const OuterCube = styled.div`
 `;
 
 export const Cube = styled.div`
-  
   width: 400px;
   height: 400px;
   position: relative;

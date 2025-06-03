@@ -7,13 +7,13 @@ export const AboutContainer = styled.section`
   height: 100vh;
   margin: 0% 1% 0% 1%;
   border: 2px solid #2d2d2f;
+
   article {
     padding: 10px;
-   
+
     height: 100%;
     margin-top: 1%;
     h1 {
-        
       font-size: 5rem;
       margin-bottom: 2%;
     }
@@ -21,5 +21,11 @@ export const AboutContainer = styled.section`
       font-size: 2.5rem;
       font-weight: bold;
     }
+  }
+  @media (max-width: 992px) {
+    margin: 0% 2% 0% 2%;
+  }
+  @media (max-width: 600px) {
+    margin: 0% 3% 0% 3%;
   }
 `;
