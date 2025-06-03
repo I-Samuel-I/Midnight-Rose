@@ -3,8 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import * as img from "../../../../assets/images/index";
 import * as S from "./style";
+import { useNavigate } from "react-router";
 export default function Nav() {
   const [MenuDisplay, setMenuDisplay] = useState(false);
+  const navigate = useNavigate();
 
   function handleMenu() {
     setMenuDisplay((prev) => !prev);
@@ -31,7 +33,7 @@ export default function Nav() {
                   <a href="#albums">ALBUMS</a>
                 </li>
                 <li>
-                  <a>CONTACT</a>
+                  <button onClick={() => navigate("/contact")}>CONTACT</button>
                 </li>
               </ul>
               <button onClick={handleMenu}>

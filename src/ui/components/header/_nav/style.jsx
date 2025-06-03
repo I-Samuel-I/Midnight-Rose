@@ -68,7 +68,15 @@ export const InfoMenu = styled.div`
       font-size: 3rem;
     }
   }
-  button {
+  button:nth-child(1) {
+    border: none;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Assistant";
+    color: white;
+    background-color: inherit;
+  }
+  button:nth-child(2) {
     height: 10%;
     margin: 5% 5% 0% 0%;
     border: none;

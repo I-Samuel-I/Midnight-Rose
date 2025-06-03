@@ -38,7 +38,7 @@ export default function InputField() {
     <S.InputContainer>
       <h1>CONTACT ME</h1>
       <form ref={formRef} onSubmit={handleSubmit}>
-        <input type="text" name="name" maxLength="20" placeholder="Your name..." value={name} onChange={(e) => setName(e.target.value)}/>
+        <input type="text" name="name"  maxLength="20" placeholder="Your name..." value={name} onChange={(e) => setName(e.target.value)}/>
         <input type="email"name="email" maxLength="50" placeholder="Your email..." value={email} onChange={(e) => setEmail(e.target.value)}/>
         <textarea name="message" rows="3" maxLength="150" placeholder="Your text..." value={message} onChange={(e) => setMessage(e.target.value)} />
         <input type="submit" value="Send" />
