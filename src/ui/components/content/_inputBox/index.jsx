@@ -1,3 +1,4 @@
+import * as img from "../../../../assets/images/index"
 import * as S from "./style";
 
 export default function InputBox({ children }) {

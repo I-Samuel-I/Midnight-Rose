@@ -1,0 +1,168 @@
+import styled from "styled-components";
+
+export const NavContainer = styled.nav`
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  list-style: none;
+  font-family: "Assistant";
+
+  a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    &:hover {
+      cursor: pointer;
+      color: #014862;
+      /* color: #2f5974; */
+      /* color: #3041bb; */
+    }
+    img {
+      width: 50px;
+
+      &:hover {
+        transform: scale(1.2);
+        transition: 0.2s;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    gap: 20px;
+    a {
+      img {
+        width: 45px;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    a {
+      img {
+        display: none;
+      }
+    }
+  }
+`;
+
+export const DisplayButton = styled.button`
+   width: 10vw;
+  padding: 18px;
+  border: 1px solid #4e4e4e;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  transition: color 0.5s, transform 0.2s, background-color 0.2s;
+  z-index: 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #014862;
+    border-radius: 30px;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    z-index: -1;
+  }
+
+  &:hover::after {
+    transform: translate(0, 0);
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: white; 
+    background-color: transparent; 
+  }
+  
+  @media (max-width: 1200px) {
+    width: 15vw;
+  }
+  @media (max-width: 768px) {
+    width: 20vw;
+  }
+  @media (max-width: 600px) {
+    width: 25vw;
+    padding: 10px;
+  }
+`;
+
+export const InfoMenu = styled.div`
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 60vh;
+  top: 25px;
+  right: 0px;
+  border: solid 2px #4e4e4e;
+  border-radius: 30px;
+  background-color: #1b1b1d;
+
+  ul {
+    margin-top: 10%;
+    padding: 40px;
+    li {
+      margin-bottom: 10%;
+      list-style: none;
+      font-size: 3rem;
+    }
+  }
+  button:nth-child(1) {
+    border: none;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Assistant";
+    color: white;
+    background-color: inherit;
+
+    @media (max-width: 600px) {
+      font-size: 2.5rem;
+    }
+  }
+  button:nth-child(2) {
+    height: 10%;
+    margin: 5% 5% 0% 0%;
+    border: none;
+    background-color: inherit;
+    svg {
+      font-size: 4rem;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      svg {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    top: 20px;
+  }
+  @media (max-width: 600px) {
+    width: 350px;
+    height: 65vh;
+    ul {
+      li {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    top: 0px;
+  }
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+`;
