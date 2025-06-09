@@ -29,10 +29,9 @@ import blueRose04 from "../../../public/images/roses/BLUE-ROSE04.png"
 import blueRose05 from "../../../public/images/roses/BLUE-ROSE05.png"
 import blueRose06 from "../../../public/images/roses/BLUE-ROSE06.png"
 import blueRose07 from "../../../public/images/roses/BLUE-ROSE07.png"
-import song01 from "../../assets/images/play-music/ado-usseewa.mp3"
+
 export { 
     logo, github,linkedin, instagram, gmail, ado, odo, night, readymade, pierrot, show,himawari, kyougen, uta, utattemita, adoShow, zanmu, adoBest,
     cubeUsseewa, cubeAishite, cubeElf, cubeRebellion, cubeRockstar, cubeRule,
     blueRose01, blueRose02, blueRose03, blueRose04, blueRose05, blueRose06, blueRose07,
-    song01,
 };

@@ -1,13 +1,21 @@
 import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
-import * as img from "../../../../assets/images/index";
-import * as music from "../../../../assets/images/index";
+import {
+  faPlay,
+  faPause,
+  faVolumeHigh,
+  faVolumeLow,
+  faVolumeOff,
+  faVolumeXmark,
+  faForwardStep,
+} from "@fortawesome/free-solid-svg-icons";
+import { music } from "./musicData";
 import * as S from "./style";
 
 export default function Music() {
   const [Playing, setPlaying] = useState(false);
-  const [Volume, setVolume] = useState(0.01);
+  const [Volume, setVolume] = useState(0.02);
+  const [PreviousVolume, setPreviousVolume] = useState(0.02);
   const audioRef = useRef(null);
 
   useEffect(() => {
@@ -26,33 +34,62 @@ export default function Music() {
     setPlaying(!Playing);
   };
   const handleVolumeChange = (e) => {
-    setVolume(e.target.value);
+    setVolume(parseFloat(e.target.value));
+  };
+
+  const VolumeIcon = () => {
+    if (Volume === 0.0) return faVolumeXmark;
+    if (Volume <= 0.04) return faVolumeOff;
+    if (Volume <= 0.095) return faVolumeLow;
+    return faVolumeHigh;
+  };
+  const toggleMute = () => {
+    if (Volume > 0) {
+      setPreviousVolume(Volume);
+      setVolume(0);
+    } else {
+      setVolume(PreviousVolume || 0.02);
+    }
   };
 
   return (
-    <S.MusicContainer>
+    <S.MainContainer>
       <S.SingleMusic>
-        <figure>
-          <img src={img.cubeUsseewa} />
-          <figcaption>うっせぇわ (usseewa) - Ado</figcaption>
-        </figure>
-        {Playing ? (
-          <FontAwesomeIcon icon={faPause} onClick={togglePlay} />
-        ) : (
-          <FontAwesomeIcon icon={faPlay} onClick={togglePlay} />
-        )}
-        <input
-          type="range"
-          min="0"
-          max="1"
-          step="0.01"
-          value={Volume}
-          onChange={handleVolumeChange}
-        />
-        <audio ref={audioRef} autoplay loop>
-          <source src={music.song01} type="audio/mp3" />
-        </audio>
+        {music.map((musicData) => (
+          <figure key={musicData.title}>
+            <img src={[musicData.image]} alt={musicData.image} />
+            <S.InfoContainer>
+              <figcaption>{musicData.title}</figcaption>
+              <S.ControlsContainer>
+                <S.PreviousTrack>
+                  <FontAwesomeIcon icon={faForwardStep} />
+                </S.PreviousTrack>
+                
+                {Playing ? (
+                  <FontAwesomeIcon icon={faPause} onClick={togglePlay} />
+                ) : (
+                  <FontAwesomeIcon icon={faPlay} onClick={togglePlay} />
+                )}
+                <FontAwesomeIcon icon={faForwardStep} />
+                <S.VolumeContainer>
+                  <FontAwesomeIcon icon={VolumeIcon()} onClick={toggleMute} />
+                  <input
+                    type="range"
+                    min="0"
+                    max="0.15"
+                    step="0.001"
+                    value={Volume}
+                    onChange={handleVolumeChange}
+                  />
+                  <audio ref={audioRef} autoPlay loop>
+                    {/* <source src={musicData.audio} type="audio/mp3" /> */}
+                  </audio>
+                </S.VolumeContainer>
+              </S.ControlsContainer>
+            </S.InfoContainer>
+          </figure>
+        ))}
       </S.SingleMusic>
-    </S.MusicContainer>
+    </S.MainContainer>
   );
 }
