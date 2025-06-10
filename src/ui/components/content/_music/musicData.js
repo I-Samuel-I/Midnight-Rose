@@ -10,19 +10,19 @@ export const music = [
     title: "うっせぇわ (Usseewa) - Ado",
     audio: song01,
   },
-//   {
-//     image: img.night,
-//     title: "うっせぇわ (All Night Radio) - Ado",
-//     audio: song02,
-//   },
-//   {
-//     image: img.readymade,
-//     title: "レディメイド (ReadyMade) - Ado",
-//     audio: song03,
-//   },
-//   {
-//     image: img.cubeRule,
-//     title: "ルル (Rule) - Ado",
-//     audio: song04,
-//   },
+  {
+    image: img.night,
+    title: "うっせぇわ (All Night Radio) - Ado",
+    audio: song02,
+  },
+  {
+    image: img.readymade,
+    title: "レディメイド (ReadyMade) - Ado",
+    audio: song03,
+  },
+  {
+    image: img.cubeRule,
+    title: "ルル (Rule) - Ado",
+    audio: song04,
+  },
 ];

@@ -21,7 +21,7 @@ export default function InputField() {
     }
 
     emailjs
-      .sendForm("service_c88s4hs", "template_18mnipe", formRef.current)
+      . dForm("service_c88s4hs", "template_18mnipe", formRef.current)
       .then(() => {
         alert("Sucess!");
         setName("");

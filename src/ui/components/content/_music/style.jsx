@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const MainContainer = styled.section`
   background-color: #222222;
+  margin-bottom: 2%;
 `;
 export const SingleMusic = styled.div`
   display: flex;
@@ -72,3 +73,5 @@ export const PreviousTrack = styled.span`
     transform: scale(-1);
   }
 `;
+export const NextTrack = styled.span `
+`

@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const ButtonContainer = styled.div`
   position: fixed;
-  top: 880px;
-  left: 30px;
+  top: 850px;
+  right: 30px;
 
   button {
     padding: 20px;
