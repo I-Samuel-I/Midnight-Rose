@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const ButtonContainer = styled.div`
   position: fixed;
-  top: 850px;
+  top: 90%;
   right: 30px;
-
+  
   button {
     padding: 20px;
     border: none;
@@ -23,5 +23,14 @@ export const ButtonContainer = styled.div`
       font-size: 2rem;
       color: white;
     }
+  }
+  @media( max-height: 900px){
+    top: 87%;
+  }
+  @media( max-height: 650px){
+    top: 82%;
+  }
+  @media( max-height: 450px){
+    top: 78%;
   }
 `;

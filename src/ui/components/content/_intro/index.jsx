@@ -98,6 +98,13 @@ export default function Intro() {
 
   return (
     <S.IntroContainer>
+      <article>
+        <h1>ADO</h1>
+        <a href="https://www.youtube.com/@Ado1024" target="_blank">
+          VIEW MORE
+          <FontAwesomeIcon icon={faArrowRight} />
+        </a>
+      </article>
       <S.Cube3DContainer
         onMouseDown={handleMouseDown}
         onTouchStart={handleTouchStart}
@@ -131,12 +138,6 @@ export default function Intro() {
           </S.OuterCube>
         </S.Cube3D>
       </S.Cube3DContainer>
-      <article>
-        <h1>ADO</h1>
-        <a href="https://www.youtube.com/@Ado1024" target="_blank">VIEW MORE
-           <FontAwesomeIcon icon={faArrowRight} />
-        </a>
-      </article>
     </S.IntroContainer>
   );
 }

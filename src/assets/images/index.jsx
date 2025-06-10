@@ -4,6 +4,7 @@ import linkedin from "../../../public/images/socials/LINKEDIN-SOCIAL.png";
 import instagram from "../../../public/images/socials/INSTAGRAM-SOCIAL.png";
 import gmail from "../../../public/images/socials/GMAIL-SOCIAL.png";
 import ado from "../../../public/images/ADO.png";
+import adoPreview from "../../../public/images/ADO-PREVIEW.png";
 import odo from "../../../public/images/musics/ADO-ODO.jpg";
 import night from "../../../public/images/musics/ADO-NIGHT.jpg";
 import readymade from "../../../public/images/musics/ADO-READYMADE.jpg";
@@ -31,7 +32,7 @@ import blueRose06 from "../../../public/images/roses/BLUE-ROSE06.png"
 import blueRose07 from "../../../public/images/roses/BLUE-ROSE07.png"
 
 export { 
-    logo, github,linkedin, instagram, gmail, ado, odo, night, readymade, pierrot, show,himawari, kyougen, uta, utattemita, adoShow, zanmu, adoBest,
+    logo, github,linkedin, instagram, gmail, ado,adoPreview, odo, night, readymade, pierrot, show,himawari, kyougen, uta, utattemita, adoShow, zanmu, adoBest,
     cubeUsseewa, cubeAishite, cubeElf, cubeRebellion, cubeRockstar, cubeRule,
     blueRose01, blueRose02, blueRose03, blueRose04, blueRose05, blueRose06, blueRose07,
 };

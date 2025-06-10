@@ -3,7 +3,7 @@ import * as S from "./style";
 export default function About() {
   return (
     <S.AboutContainer id="about">
-      <img src={img.ado} alt="Ado" />
+      <img src={img.adoPreview} alt="Ado" />
       <article>
         <h1>EARLY CARRER</h1>
         <p>

@@ -46,6 +46,7 @@ export const NavContainer = styled.nav`
 `;
 
 export const DisplayButton = styled.button`
+z-index: 100;
    width: 10vw;
   padding: 18px;
   border: 1px solid #4e4e4e;

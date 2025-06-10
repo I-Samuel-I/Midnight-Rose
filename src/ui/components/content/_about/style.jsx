@@ -7,7 +7,6 @@ export const AboutContainer = styled.section`
   height: 100vh;
   margin: 0% 1% 0% 1%;
   border: 2px solid #2d2d2f;
-
   article {
     padding: 10px;
 
