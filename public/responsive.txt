@@ -1,9 +1,13 @@
-@media only screen and (max-width: 600px) {...}
-
-@media only screen and (min-width: 600px) {...}
-
-@media only screen and (min-width: 768px) {...}
-
-@media only screen and (min-width: 992px) {...}
-
-@media only screen and (min-width: 1200px) {...}
+@media (max-width: 450px) 
+  
+@media (max-width: 600px) 
+  
+@media (max-width: 768px)
+  
+@media (max-width: 992px) 
+  
+@media (max-width: 1024px) 
+  
+@media (max-width: 1200px) 
+  
+@media (max-width: 1440px) 

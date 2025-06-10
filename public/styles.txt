@@ -1,0 +1,10 @@
+URL FONT: https://fonts.google.com/specimen/Assistant
+
+Background color: #1B1B1D
+Color div: #222222
+Border color: #2d2d2f
+Color text: #ffff
+Color hover: #014862
+Other colors:#5a3e9c | #7e57c2 | #3041bb
+
+Fonts: Assistant, sans-serif\
