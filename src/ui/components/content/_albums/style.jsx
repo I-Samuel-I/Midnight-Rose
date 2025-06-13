@@ -4,6 +4,9 @@ export const AlbumsContainer = styled.section`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 export const AlbumsAside = styled.aside`
   position: sticky;
@@ -26,6 +29,59 @@ export const AlbumsAside = styled.aside`
       &:hover {
         cursor: pointer;
         color: #014862;
+      }
+    }
+  }
+  @media (max-width: 1440px) {
+    h1 {
+      font-size: 4.5rem;
+    }
+    div {
+      a {
+        font-size: 2.3rem;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    margin-left: 4%;
+    h1 {
+      font-size: 4rem;
+    }
+    div {
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    margin-left: 3%;
+    h1 {
+      font-size: 3.5rem;
+    }
+    div {
+      a {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0%;
+    h1 {
+      font-size: 4rem;
+      text-align: center;
+    }
+    div {
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      margin: 1% 0% 0% 0%;
+
+      a {
+        font-size: 1.5rem;
       }
     }
   }
@@ -82,5 +138,55 @@ export const AlbumsList = styled.figure`
   }
   .ImageContainer:hover .Overlay {
     opacity: 1;
+  }
+
+  @media (max-width: 1440px) {
+    figure {
+      img {
+        width: 750px;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    figure {
+      img {
+        width: 550px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    figure {
+      img {
+        width: 475px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 650px;
+      }
+      figcaption {
+        margin-top: 2%;
+        font-size: 2.5rem;
+      }
+    }
+  }
+  @media (max-width: 640px) {
+    figure {
+      img {
+        width: 100%;
+      }
+      figcaption {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
   }
 `;

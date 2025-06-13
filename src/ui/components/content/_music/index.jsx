@@ -88,7 +88,7 @@ export default function Music() {
   };
 
   return (
-    <S.MainContainer>
+    <S.MusicContainer>
       <S.SingleMusic>
         <figure key={currentMusic.title}>
           <img src={currentMusic.image} alt={currentMusic.title} />
@@ -121,6 +121,6 @@ export default function Music() {
           <source src={currentMusic.audio} type="audio/mp3" />
         </audio>
       </S.SingleMusic>
-    </S.MainContainer>
+    </S.MusicContainer>
   );
 }

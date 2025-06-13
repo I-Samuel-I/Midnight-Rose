@@ -1,13 +1,12 @@
 import styled, { keyframes } from "styled-components";
 
 const autoRotate = keyframes`
-  0% { transform: rotateX(0deg) rotateY(0deg); }
-  100% { transform: rotateX(180deg) rotateY(360deg); }
+ 0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
 `;
 
 export const IntroContainer = styled.section`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 100vh;
   margin: 0% 1% 0% 1%;
@@ -28,6 +27,9 @@ export const IntroContainer = styled.section`
       text-decoration: none;
       color: white;
 
+      &:hover {
+        color: #014862;
+      }
       svg {
         font-size: 1rem;
       }
@@ -76,21 +78,27 @@ export const IntroContainer = styled.section`
         font-size: 4rem;
       }
       a {
-        font-size: 0.8;
+        font-size: 0.8rem;
       }
     }
   }
 `;
+export const Content = styled.div`
+  
+    display: flex;
+` 
 
 export const Cube3DContainer = styled.div`
   z-index: 1;
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+  align-items: center;  
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 125px;
   user-select: none;
+  touch-action: none;
 
   @media (max-width: 992px) {
     bottom: 150px;
@@ -113,11 +121,10 @@ export const OuterCube = styled.div`
 export const Cube = styled.div`
   width: 450px;
   height: 450px;
-  position: relative; 
+  position: relative;
   transform-origin: center;
   transform-style: preserve-3d;
   animation: ${autoRotate} 60s linear infinite;
- 
 `;
 
 export const Face = styled.div`
@@ -140,9 +147,13 @@ export const Face = styled.div`
     width: 400px;
     height: 400px;
   }
+  @media (max-width: 992px) {
+    width: 375px;
+    height: 375px;
+  }
    @media (max-width: 768px) {
-    width: 350px;
-    height: 350px;
+    width: 325px;
+    height: 325px;
   }
 `;
 
@@ -155,8 +166,8 @@ export const CubeFaceFront = styled(Face)`
   @media (max-width: 1200px) {
     transform: translateZ(200px);
   }
-   @media (max-width: 768px) {
-    transform: translateZ(175px);
+  @media (max-width: 992px) {
+    transform: translateZ(187.2px);
   }
 `;
 export const CubeFaceBack = styled(Face)`
@@ -168,8 +179,8 @@ export const CubeFaceBack = styled(Face)`
   @media (max-width: 1200px) {
     transform: rotateY(180deg) translateZ(200px);
   }
-   @media (max-width: 768px) {
-    transform: rotateY(180deg) translateZ(175px);
+  @media (max-width: 992px) {
+    transform: rotateY(180deg) translateZ(187.2px);
   }
 `;
 export const CubeFaceLeft = styled(Face)`
@@ -181,8 +192,8 @@ export const CubeFaceLeft = styled(Face)`
   @media (max-width: 1200px) {
     transform: rotateY(-90deg) translateZ(200px);
   }
-   @media (max-width: 768px) {
-    transform: rotateY(-90deg) translateZ(175px);
+  @media (max-width: 992px) {
+    transform: rotateY(-90deg) translateZ(187.2px);
   }
 `;
 export const CubeFaceRight = styled(Face)`
@@ -194,8 +205,8 @@ export const CubeFaceRight = styled(Face)`
   @media (max-width: 1200px) {
     transform: rotateY(90deg) translateZ(200px);
   }
-  @media (max-width: 768px) {
-    transform: rotateY(90deg) translateZ(175px);
+  @media (max-width: 992px) {
+    transform: rotateY(90deg) translateZ(187.2px);
   }
 `;
 export const CubeFaceTop = styled(Face)`
@@ -207,8 +218,8 @@ export const CubeFaceTop = styled(Face)`
   @media (max-width: 1200px) {
     transform: rotateX(90deg) translateZ(200px);
   }
-  @media (max-width: 768px) {
-    transform: rotateX(90deg) translateZ(175px);
+  @media (max-width: 992px) {
+    transform: rotateX(90deg) translateZ(187.2px);
   }
 `;
 export const CubeFaceBottom = styled(Face)`
@@ -220,7 +231,7 @@ export const CubeFaceBottom = styled(Face)`
   @media (max-width: 1200px) {
     transform: rotateX(-90deg) translateZ(200px);
   }
-  @media (max-width: 768px) {
-    transform: rotateX(-90deg) translateZ(175px);
+  @media (max-width: 992px) {
+    transform: rotateX(-90deg) translateZ(187.2px);
   }
 `;

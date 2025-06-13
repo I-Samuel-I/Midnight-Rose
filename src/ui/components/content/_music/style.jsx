@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
-export const MainContainer = styled.section`
+export const MusicContainer = styled.section`
   background-color: #222222;
-  margin-bottom: 2%;
+  margin: 15% 0% 5% 0%;
 `;
 export const SingleMusic = styled.div`
   display: flex;
-
   gap: 25px;
 
   figure {

@@ -3,18 +3,16 @@ import * as S from "./style";
 export default function About() {
   return (
     <S.AboutContainer id="about">
-      <img src={img.adoPreview} alt="Ado" />
+      <img src={img.ado} alt="Ado" />
       <article>
         <h1>EARLY CARRER</h1>
         <p>
-          Ado began her musical journey as a utaite — a singer who shares vocal
-          covers online, often of Vocaloid or anime songs. She gained
-          recognition on platforms like Nico Nico Douga and YouTube, where her
-          unique voice and emotional delivery quickly stood out. Despite never
-          showing her face, her raw talent and expressive performances attracted
-          a growing fanbase, setting the stage for her professional debut.
+          Ado started as an utaite, gaining online recognition on Nico Nico
+          Douga and YouTube with her unique voice and expressive covers. Her raw
+          talent attracted a growing fanbase, even without showing her face,
+          leading to her professional debut.
         </p>
       </article>
     </S.AboutContainer>
-  );  
+  );
 }
