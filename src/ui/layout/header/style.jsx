@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
+  z-index: 2;
   position: sticky;
   display: flex;
   top: 0;

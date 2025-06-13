@@ -46,8 +46,7 @@ export const NavContainer = styled.nav`
 `;
 
 export const DisplayButton = styled.button`
-z-index: 100;
-   width: 10vw;
+  width: 10vw;
   padding: 18px;
   border: 1px solid #4e4e4e;
   border-radius: 30px;
@@ -61,7 +60,7 @@ z-index: 100;
   z-index: 0;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -81,10 +80,10 @@ z-index: 100;
 
   &:hover {
     cursor: pointer;
-    color: white; 
-    background-color: transparent; 
+    color: white;
+    background-color: transparent;
   }
-  
+
   @media (max-width: 1200px) {
     width: 15vw;
   }
@@ -98,8 +97,7 @@ z-index: 100;
 `;
 
 export const InfoMenu = styled.div`
-  z-index: 100;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   width: 400px;
@@ -117,6 +115,27 @@ export const InfoMenu = styled.div`
       margin-bottom: 10%;
       list-style: none;
       font-size: 3rem;
+
+      a {
+        display: flex;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        &:hover {
+          cursor: pointer;
+          color: #014862;
+          /* color: #2f5974; */
+          /* color: #3041bb; */
+        }
+        img {
+          width: 50px;
+
+          &:hover {
+            transform: scale(1.2);
+            transition: 0.2s;
+          }
+        }
+      }
     }
   }
   button:nth-child(1) {

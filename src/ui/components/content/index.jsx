@@ -9,24 +9,24 @@ import Music from "./_music";
 export default function Content() {
   return (
     <S.ContentContainer>
-      <div>
+      <section>
         <Intro />
-      </div>
-      <div>
+      </section>
+      <section>
         <About />
-      </div>
-      <div>
+      </section>
+      <section>
         <Carrer />
-      </div>
-      <div>
+      </section>
+      <section>
         <Musics />
-      </div>
-      <div>
+      </section>
+      <section>
         <Albums />
-      </div>
-      <div>
+      </section>
+      <section>
         <Music/>
-      </div>
+      </section>
     </S.ContentContainer>
   );
 }

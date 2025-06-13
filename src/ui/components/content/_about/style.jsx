@@ -5,7 +5,7 @@ export const AboutContainer = styled.section`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  margin: 0% 1% 0% 1%;
+  margin: 0% 1% 1% 1%;
   border: 2px solid #2d2d2f;
   img {
     height: 100%;
@@ -50,9 +50,9 @@ export const AboutContainer = styled.section`
   }
   @media (max-width: 992px) {
     height: 60vh;
-    margin: 0% 2% 0% 2%;
-     img {
-      height:100%;
+    margin: 0% 2% 1% 2%;
+    img {
+      height: 100%;
     }
     article {
       h1 {
@@ -62,48 +62,44 @@ export const AboutContainer = styled.section`
         font-size: 1.2rem;
       }
     }
-
   }
-  @media(max-width: 768px){
-    flex-direction:column;
+  @media (max-width: 768px) {
+    flex-direction: column;
     height: 100vh;
 
-    img{
+    img {
       width: 70%;
     }
-    article{
+    article {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      h1{
+      h1 {
         font-size: 3rem;
       }
-      p{
+      p {
         padding: 10px;
         text-align: center;
       }
     }
-    
-
   }
   @media (max-width: 600px) {
-    margin: 0% 3% 0% 3%;
-    
-    img{
+    margin: 0% 3% 2% 3%;
+
+    img {
       width: 95%;
     }
   }
-   @media (max-width: 400px) {
-    
-    img{
+  @media (max-width: 400px) {
+    img {
       width: 100%;
     }
-    article{
-      h1{
-        font-size:2.5rem
+    article {
+      h1 {
+        font-size: 2.5rem;
       }
-      p{
+      p {
         font-size: 1rem;
       }
     }

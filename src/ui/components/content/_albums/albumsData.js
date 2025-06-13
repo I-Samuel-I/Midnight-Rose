@@ -30,7 +30,7 @@ export const albums = [
     spotify: "https://open.spotify.com/intl-pt/album/3YQA0MVV7U5puzsxGSOhlU?si=lcw_ZdcdSuWQVMxpYKa2qA"
   },
   {
-    title: "ADO'S BEST",
+    title: "ADO'S BEST ADOBUM",
     year: 2025,
     image: "adoBest",
     spotify: "https://open.spotify.com/intl-pt/album/4G1L7sZheq5RAFNbqSbp3O?si=edk58GRUQJytGSi55L6aKA"
