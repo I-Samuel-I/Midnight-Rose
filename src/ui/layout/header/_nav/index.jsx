@@ -21,11 +21,10 @@ export default function Nav() {
         </a>
         <li>
           <S.DisplayButton onClick={handleMenu}>MENU</S.DisplayButton>
-          {/* O InfoMenu NÃO ESTARIA MAIS AQUI */}
+         
         </li>
       </S.NavContainer>
 
-      {/* O InfoMenu AGORA É UM IRMÃO DO NavContainer */}
       {MenuDisplay && (
         <S.InfoMenu>
           <ul>

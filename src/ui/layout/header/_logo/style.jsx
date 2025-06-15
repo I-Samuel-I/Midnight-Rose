@@ -52,7 +52,7 @@ export const LogoContainer = styled.div`
   @media(max-width: 375px){
     button{
 
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     }
   }
 `;

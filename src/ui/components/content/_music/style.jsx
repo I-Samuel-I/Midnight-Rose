@@ -28,6 +28,7 @@ export const SingleMusic = styled.div`
   }
   input[type="range"] {
     -webkit-appearance: none;
+    width: 125px;
     height: 8px;
     background: #343438;
     border-radius: 30px;
@@ -44,12 +45,7 @@ export const SingleMusic = styled.div`
     cursor: pointer;
   }
 
-  input[type="range"]::-moz-range-thumb {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
+
 
   @media (max-width: 500px) {
     figure {
@@ -66,8 +62,12 @@ export const SingleMusic = styled.div`
         font-size: 0.9rem;
       }
     }
+    input[type="range"] {
+      width: 100%;
+      margin-right: 5%;
+    }
   }
-  
+}
 `;
 export const InfoContainer = styled.div`
   display: flex;

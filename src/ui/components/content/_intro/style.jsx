@@ -85,21 +85,30 @@ export const IntroContainer = styled.section`
     }
   }
   @media (max-width: 600px) {
+    height: 90vh;
     margin: 0% 3% 0% 3%;
     article {
       left: 30%;
-      bottom: 200px;
+      bottom: 150px;
     }
   }
   @media (max-width: 400px) {
     article {
-      bottom: 220px;
+    
 
       h1{
         font-size: 3.2rem;
       }
     }
   }
+
+  @media(max-height: 750px){
+    article {
+      left: 30%;
+      bottom: 0px;
+    }
+  }
+
 `;
 export const Content = styled.div`
   display: flex;
@@ -120,7 +129,10 @@ export const Cube3DContainer = styled.div`
     bottom: 125px;
   }
   @media (max-width: 600px) {
-    bottom: 200px;
+    bottom: 250px;
+  }
+  @media(max-height: 750px){
+    bottom: 75px;
   }
 `;
 

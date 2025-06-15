@@ -46,6 +46,7 @@ export const NavContainer = styled.nav`
 `;
 
 export const DisplayButton = styled.button`
+  z-index: 2;
   width: 10vw;
   padding: 18px;
   border: 1px solid #4e4e4e;
@@ -57,8 +58,10 @@ export const DisplayButton = styled.button`
   color: white;
   background-color: transparent;
   transition: color 0.5s, transform 0.2s, background-color 0.2s;
+  
 
   &::after {
+    z-index: -1;
     content: "";
     position: absolute;
     top: 0;
@@ -70,7 +73,7 @@ export const DisplayButton = styled.button`
     transform: translate(-100%, 0) rotate(10deg);
     transform-origin: top left;
     transition: 0.2s transform ease-out;
-    z-index: -1;
+    
   }
 
   &:hover::after {
@@ -90,7 +93,8 @@ export const DisplayButton = styled.button`
     width: 20vw;
   }
   @media (max-width: 600px) {
-    width: 25vw;
+    font-size: 1rem;
+    width: 30vw;
     padding: 10px;
   }
 `;
