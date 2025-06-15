@@ -11,6 +11,7 @@ export const AlbumsContainer = styled.section`
 export const AlbumsAside = styled.aside`
   position: sticky;
   top: 0;
+  height: 100%;
   margin-left: 5%;
   h1 {
     font-size: 5rem;
@@ -65,13 +66,15 @@ export const AlbumsAside = styled.aside`
     }
   }
   @media (max-width: 768px) {
+    position: static;
     margin-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     margin-left: 0%;
     h1 {
-      font-size: 4rem;
+      font-size: 3.5rem;
       text-align: center;
     }
     div {
@@ -81,7 +84,17 @@ export const AlbumsAside = styled.aside`
       margin: 1% 0% 0% 0%;
 
       a {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 3.2rem;
+    }
+    div {
+      a {
+        font-size: 1.2rem;
       }
     }
   }
@@ -159,6 +172,9 @@ export const AlbumsList = styled.figure`
       img {
         width: 475px;
       }
+      figcaption {
+        font-size: 2.5rem;
+      }
     }
   }
   @media (max-width: 768px) {
@@ -170,22 +186,37 @@ export const AlbumsList = styled.figure`
       flex-direction: column;
       align-items: center;
       img {
-        width: 650px;
+        width: 625px;
       }
       figcaption {
         margin-top: 2%;
-        font-size: 2.5rem;
       }
     }
   }
   @media (max-width: 640px) {
     figure {
-      img {
-        width: 100%;
+      .ImageContainer {
+        display: flex;
+        justify-content: center;
       }
+      img {
+        width: 95%;
+      }
+
       figcaption {
         font-size: 2rem;
-        font-weight: bold;
+      }
+    }
+  }
+  @media(max-width: 600px){
+     .Overlay {
+      display: none;
+    }
+  }
+  @media (max-width: 400px) {
+    figure {
+      figcaption {
+        font-size: 1.3rem;
       }
     }
   }

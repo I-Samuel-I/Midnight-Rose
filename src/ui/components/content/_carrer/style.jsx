@@ -100,7 +100,7 @@ export const CarrerContainer = styled.section`
         font-size: 2.5rem;
       }
       p {
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
     }
   }

@@ -64,7 +64,7 @@ export default function InputField() {
         <textarea
           name="message"
           rows="3"
-          maxLength="150"
+          maxLength="200"
           placeholder="Your message..."
           value={message}
           onChange={(e) => setMessage(e.target.value)}

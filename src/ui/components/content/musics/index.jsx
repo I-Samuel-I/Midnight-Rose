@@ -26,11 +26,7 @@ export default function Musics() {
         ))}
       </figure>
       <S.LinkAdo>
-        <a
-          href="https://open.spotify.com/intl-pt/artist/6mEQK9m2krja6X1cfsAjfl?si=bEOcom0pREKOT9Bx1HxfGQ"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://open.spotify.com/intl-pt/artist/6mEQK9m2krja6X1cfsAjfl?si=bEOcom0pREKOT9Bx1HxfGQ" target="_blank" rel="noopener noreferrer">
           ADO
         </a>
       </S.LinkAdo>

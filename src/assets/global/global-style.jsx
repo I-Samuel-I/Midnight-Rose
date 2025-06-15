@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
 }  
 body,html{
     width: 100%;
-    overflow-x: hidden;
+    
     /* user-select: none; */
     scroll-behavior: smooth;
     font-family: 'Assistant', sans-serif;

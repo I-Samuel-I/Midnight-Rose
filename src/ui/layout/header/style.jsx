@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  z-index: 2;
-  position: sticky;
+  z-index: 5;
   display: flex;
-  top: 0;
   justify-content: space-between;
   margin: 1%;
 

@@ -57,7 +57,6 @@ export const DisplayButton = styled.button`
   color: white;
   background-color: transparent;
   transition: color 0.5s, transform 0.2s, background-color 0.2s;
-  z-index: 0;
 
   &::after {
     content: "";
@@ -97,6 +96,7 @@ export const DisplayButton = styled.button`
 `;
 
 export const InfoMenu = styled.div`
+  z-index: 2;
   position: fixed;
   display: flex;
   justify-content: space-between;

@@ -11,6 +11,7 @@ export const IntroContainer = styled.section`
   height: 100vh;
   margin: 0% 1% 0% 1%;
   article {
+    z-index: 3;
     display: flex;
     flex-direction: column;
     margin: 0% 0% 10% 10%;
@@ -39,13 +40,6 @@ export const IntroContainer = styled.section`
     width: 100%;
   }
 
-  @media (max-width: 992px) {
-    margin: 0% 2% 0% 2%;
-  }
-  @media (max-width: 600px) {
-    margin: 0% 3% 0% 3%;
-  }
-
   @media (max-width: 1440px) {
     article {
       margin: 0% 0% 15% 6%;
@@ -65,59 +59,44 @@ export const IntroContainer = styled.section`
         font-size: 3.5rem;
       }
       a {
-        font-size: 0.8;
+        font-size: 0.8rem;
       }
     }
   }
   @media (max-width: 992px) {
     flex-direction: column-reverse;
+    margin: 0% 2% 3% 2%;
     article {
-      margin: 0% 0% 25% 75%;
-
+      position: relative;
+      left: 35%;
+      bottom: 100px;
       h1 {
         font-size: 4rem;
-      }
-      a {
-        font-size: 0.8rem;
       }
     }
   }
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     flex-direction: column-reverse;
     article {
-      margin: 0% 0% 30% 75%;
-
+      gap: 10px;
       h1 {
-        font-size: 4rem;
-      }
-      a {
-        font-size: 0.8rem;
+        font-size: 3.5rem;
       }
     }
   }
-  @media (max-width:600px) {
-    flex-direction: column-reverse;
+  @media (max-width: 600px) {
+    margin: 0% 3% 0% 3%;
     article {
-      margin: 0% 0% 40% 75%;
-
-      h1 {
-        font-size: 4rem;
-      }
-      a {
-        font-size: 0.8rem;
-      }
+      left: 30%;
+      bottom: 200px;
     }
   }
-  @media (max-width:500px) {
-    flex-direction: column-reverse;
+  @media (max-width: 400px) {
     article {
-      margin: 0% 0% 50% 60%;
+      bottom: 220px;
 
-      h1 {
-        font-size: 4rem;
-      }
-      a {
-        font-size: 0.8rem;
+      h1{
+        font-size: 3.2rem;
       }
     }
   }
@@ -129,12 +108,11 @@ export const Content = styled.div`
 export const Cube3DContainer = styled.div`
   position: absolute;
   display: flex;
-  width: 100%;
+  left: 50%;
   bottom: 150px;
   user-select: none;
   touch-action: none;
-  
-  
+
   @media (max-width: 992px) {
     bottom: 150px;
   }
@@ -158,7 +136,7 @@ export const OuterCube = styled.div`
   width: 100%;
 `;
 export const Cube = styled.div`
-  width:100%;
+  width: 100%;
   height: 450px;
   display: flex;
   align-items: center;
@@ -167,7 +145,6 @@ export const Cube = styled.div`
   transform-origin: center;
   transform-style: preserve-3d;
   animation: ${autoRotate} 60s linear infinite;
-
 `;
 
 export const Face = styled.div`
@@ -207,8 +184,8 @@ export const Face = styled.div`
     height: 250px;
   }
   @media (max-width: 400px) {
-    width: 200px;
-    height: 200px;
+    width: 225px;
+    height: 225px;
   }
 `;
 
@@ -233,8 +210,8 @@ export const CubeFaceFront = styled(Face)`
   @media (max-width: 500px) {
     transform: translateZ(125px);
   }
-   @media (max-width: 400px) {
-    transform: translateZ(100px);
+  @media (max-width: 400px) {
+    transform: translateZ(112.5px);
   }
 `;
 export const CubeFaceBack = styled(Face)`
@@ -259,7 +236,7 @@ export const CubeFaceBack = styled(Face)`
     transform: rotateY(180deg) translateZ(125px);
   }
   @media (max-width: 400px) {
-    transform: rotateY(180deg) translateZ(100px);
+    transform: rotateY(180deg) translateZ(112.5px);
   }
 `;
 export const CubeFaceLeft = styled(Face)`
@@ -284,7 +261,7 @@ export const CubeFaceLeft = styled(Face)`
     transform: rotateY(-90deg) translateZ(125px);
   }
   @media (max-width: 400px) {
-    transform: rotateY(-90deg) translateZ(100px);
+    transform: rotateY(-90deg) translateZ(112.5px);
   }
 `;
 export const CubeFaceRight = styled(Face)`
@@ -309,7 +286,7 @@ export const CubeFaceRight = styled(Face)`
     transform: rotateY(90deg) translateZ(125px);
   }
   @media (max-width: 400px) {
-    transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(112.5px);
   }
 `;
 export const CubeFaceTop = styled(Face)`
@@ -333,8 +310,8 @@ export const CubeFaceTop = styled(Face)`
   @media (max-width: 500px) {
     transform: rotateX(90deg) translateZ(125px);
   }
-   @media (max-width: 400px) {
-    transform: rotateX(90deg) translateZ(100px);
+  @media (max-width: 400px) {
+    transform: rotateX(90deg) translateZ(112.5px);
   }
 `;
 export const CubeFaceBottom = styled(Face)`
@@ -359,6 +336,6 @@ export const CubeFaceBottom = styled(Face)`
     transform: rotateX(-90deg) translateZ(125px);
   }
   @media (max-width: 400px) {
-    transform: rotateX(-90deg) translateZ(100px);
+    transform: rotateX(-90deg) translateZ(112.5px);
   }
 `;

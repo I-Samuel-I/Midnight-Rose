@@ -20,7 +20,9 @@ export const InputContainer = styled.article`
       font-family: "Assistant", sans-serif;
       color: white;
       background-color: #313131;
-
+      &:focus {
+        outline: solid 2px #474747;
+      }
       &::placeholder {
         font-weight: bold;
         color: #7d7c7c;
@@ -48,10 +50,21 @@ export const InputContainer = styled.article`
       color: white;
       background-color: #313131;
 
+      &:focus {
+        outline: solid 2px #474747;
+      }
       &::placeholder {
         font-weight: bold;
         color: #7d7c7c;
       }
     }
+  }
+  @media(max-width: 600px){
+    h1{
+      font-size: 2rem;
+    }
+     input[type="submit"] {
+      padding: 15px;
+     }
   }
 `;

@@ -31,14 +31,6 @@ export const ButtonContainer = styled.div`
       }
     }
   }
-  @media (max-width: 600px) {
-    button {
-      padding: 17px;
-      svg {
-        font-size: 1.3rem;
-      }
-    }
-  }
 
   @media (max-height: 900px) {
     top: 87%;
@@ -46,7 +38,18 @@ export const ButtonContainer = styled.div`
   @media (max-height: 650px) {
     top: 82%;
   }
+
+  @media (max-width: 600px) {
+    top: 90%;
+    button {
+      padding: 17px;
+      svg {
+        font-size: 1.3rem;
+      }
+    }
+  }
   @media (max-height: 450px) {
     top: 78%;
   }
+
 `;

@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const MusicContainer = styled.section`
   background-color: #222222;
-  margin: 15% 0% 5% 0%;
+  margin: 30% 0% 5% 0%;
 `;
 export const SingleMusic = styled.div`
   display: flex;
   gap: 25px;
-
   figure {
     display: flex;
     align-items: center;
@@ -15,11 +14,11 @@ export const SingleMusic = styled.div`
     gap: 20px;
 
     figcaption {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: bold;
     }
     img {
-      width: 85px;
+      width: 100px;
     }
   }
 
@@ -51,26 +50,51 @@ export const SingleMusic = styled.div`
     border-radius: 50%;
     cursor: pointer;
   }
+
+  @media (max-width: 500px) {
+    figure {
+      figcaption {
+        font-size: 1.1rem;
+      }
+      img {
+        width: 85px;
+      }
+    }
+  @media (max-width: 400px) {
+    figure {
+      figcaption {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  
 `;
 export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    justify-content: center;
+  }
 `;
 export const ControlsContainer = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
+  @media (max-width: 500px) {
+    gap: 15px;
+    svg {
+      font-size: 1.3rem;
+    }
+  }
 `;
 export const VolumeContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
 `;
-export const PreviousTrack = styled.span`
-  svg {
-    transform: scale(-1);
-  }
-`;
-export const NextTrack = styled.span `
-`
+export const PreviousTrack = styled.span``;
+export const NextTrack = styled.span``;
