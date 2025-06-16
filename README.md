@@ -1,7 +1,8 @@
 # Midnight Rose
 
 > 🟠 Status: In Development 
-This project is a fan-made website dedicated to the Japanese singer Ado. The goal is to showcase a bit of her musical career, highlighting some of her most popular songs and albums. The website also features a unique design and visual identity created by the developer, offering visitors a distinctive and engaging experience both visually and informatively.
+
+#### This project is a fan-made website dedicated to the Japanese singer Ado. The goal is to showcase a bit of her musical career, highlighting some of her most popular songs and albums. 
 
 <img width="800px" src="/public/images/Page.png">
 
