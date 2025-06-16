@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const MusicContainer = styled.section`
+  
   background-color: #222222;
   margin: 30% 0% 5% 0%;
 `;
@@ -44,8 +45,6 @@ export const SingleMusic = styled.div`
     border-radius: 50%;
     cursor: pointer;
   }
-
-
 
   @media (max-width: 500px) {
     figure {
