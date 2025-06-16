@@ -8,7 +8,7 @@
 
 ## 💻 Online Page: https://midnight-rose.vercel.app
 
-## ▶️ How to use:
+##  How to use:
 
 Follow one of the options below to get a copy of this project:
 
@@ -33,7 +33,7 @@ npm install / yarn install
 npm run dev
 ```
 
-## 🛠️ Built With
+## Built With
 
 Here are the main tools and libraries used to build this project:
 
@@ -44,16 +44,16 @@ Here are the main tools and libraries used to build this project:
 - 📧 [EmailJS](https://www.emailjs.com/) – For sending emails directly from the client  
 - 🎸 [Font Awesome](https://fontawesome.com/) – Icon toolkit used for UI icons  
 
-## 📌 Version
+## Version
 
 This project is currently in **beta**.  
 Official releases and version tags will be published in the future.
 
-## ✒️ Author
+## Author
 
 - **Samuel Gomes** – _Front-end Developer_ – [I-Samuel-I](https://github.com/I-Samuel-I)
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.MD) file for details.
 
