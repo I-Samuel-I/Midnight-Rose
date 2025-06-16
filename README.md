@@ -55,7 +55,7 @@ Official releases and version tags will be published in the future.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.MD) file for details.
 
 ## 🌐 Contacts:
 
