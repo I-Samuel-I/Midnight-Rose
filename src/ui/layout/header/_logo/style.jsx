@@ -15,47 +15,56 @@ export const LogoContainer = styled.div`
     color: white;
     background-color: inherit;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
-  @media(max-width: 992px){
-    img{
+  div {
+    display: flex;
+    gap: 5px;
+  }
+  @media (max-width: 992px) {
+    img {
       width: 75px;
     }
-    button{
+    button {
       font-size: 3rem;
     }
   }
-  @media(max-width: 768px){
+  @media (max-width: 768px) {
     gap: 5px;
-    img{
+    img {
       width: 70px;
     }
-    button{
+    button {
       font-size: 2.5rem;
     }
+    h2 {
+      font-size: 0.8rem;
+    }
   }
-   @media(max-width: 600px){
-    img{
+  @media (max-width: 600px) {
+    img {
       width: 65px;
     }
-    button{
-      font-size: 2rem;
+    button {
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 0.6rem;
     }
   }
-  @media(max-width: 500px){
-    img{
+  @media (max-width: 500px) {
+    img {
       display: none;
     }
-    button{
+    button {
       padding: 5px;
       font-size: 2rem;
     }
   }
-  @media(max-width: 375px){
-    button{
-
+  @media (max-width: 425px) {
+    button {
       font-size: 1.5rem;
     }
   }

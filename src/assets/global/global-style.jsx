@@ -9,7 +9,6 @@ export const GlobalStyle = createGlobalStyle`
 body,html{
     width: 100%;
     user-select: none;
-    
     scroll-behavior: smooth;
     font-family: 'Assistant', sans-serif;
     font-size: 16px;

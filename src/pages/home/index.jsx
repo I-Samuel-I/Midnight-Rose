@@ -5,17 +5,17 @@ import Top from "../../ui/components/topButton";
 import Music from "../../ui/components/content/_music";
 import * as S from "./style";
 import Intro from "../../ui/components/content/_intro";
+import { Div } from "../../ui/layout/div/style";
 
 export default function Home() {
   return (
     <S.MainContainer>
       <Header />
-      <S.ScrollContainer>
-        <Intro />
-        <Content />
-      </S.ScrollContainer>
+      <Intro />
+      <Content />
       <Top />
       <Music />
+      <Div />
       <Footer />
     </S.MainContainer>
   );

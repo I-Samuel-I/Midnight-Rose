@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import swal from "sweetalert2";
 import * as S from "./style";
 
 export default function InputField() {
@@ -22,14 +23,27 @@ export default function InputField() {
 
     // Prevent submission if any field is empty
     if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
-      alert("Please fill in all fields.");
+      swal.fire({
+        title: "Warning!",
+        text: "Please fill in all fields!",
+        icon: "warning",
+        background: "#222222",
+        color: "#fff",
+      });
+
       return;
     }
 
     emailjs
       .sendForm("service_c88s4hs", "template_18mnipe", formRef.current)
       .then(() => {
-        alert("Message sent successfully!");
+        swal.fire({
+          title: "SUCESS!",
+          text: "Your message has been sent. Please check your email for our response.",
+          icon: "success",
+          background: "#222222",
+          color: "#fff",
+        });
         // Reset form fields after submission
         setName("");
         setEmail("");

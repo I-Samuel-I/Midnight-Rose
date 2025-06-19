@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from "styled-components";
-
+import { HoverImage } from "../../../../assets/theme/style";
 const slideUp = keyframes`
   0% {
     opacity: 0;
@@ -41,7 +41,9 @@ export const NavContainer = styled.nav`
   a {
     display: flex;
     img {
+      ${HoverImage};
       width: 50px;
+      pointer-events: all;
     }
   }
   @media (max-width: 768px) {
@@ -108,7 +110,7 @@ export const DisplayButton = styled.button`
   }
   @media (max-width: 600px) {
     font-size: 1rem;
-    width: 30vw;
+    width: 25vw;
     padding: 10px;
   }
 `;
@@ -176,7 +178,6 @@ export const InfoMenu = styled.div`
 
       &:hover {
         color: #014862;
-        
       }
     }
 

@@ -26,6 +26,7 @@ export const SingleMusic = styled.div`
     figcaption {
       font-size: 1.2rem;
       font-weight: bold;
+      padding-right: 15px;
     }
     img {
       width: 75px;
@@ -87,7 +88,9 @@ export const ControlsContainer = styled.div`
   ${FlexItems};
   gap: 20px;
   padding-bottom: 2px;
-
+  &:hover{
+    cursor: pointer;
+  }
   svg {
     font-size: 1.2rem;
   }
