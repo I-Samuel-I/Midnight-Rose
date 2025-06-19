@@ -60,8 +60,13 @@ export const SingleMusic = styled.div`
       width: 70%;
     }
     figure {
-      figcaption {
-        font-size: 1rem;
+     
+    }
+  }
+  @media (max-width: 500px) {
+    figure{
+      img{
+        width: 65px;
       }
     }
   }
@@ -75,11 +80,9 @@ export const SingleMusic = styled.div`
 `;
 export const InfoContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
   gap: 10px;
-
   @media (max-width: 600px) {
     justify-content: center;
   }
@@ -88,19 +91,13 @@ export const ControlsContainer = styled.div`
   ${FlexItems};
   gap: 20px;
   padding-bottom: 2px;
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
   svg {
     font-size: 1.2rem;
   }
 
-  @media (max-width: 992px) {
-    gap: 15px;
-    svg {
-      font-size: 1rem;
-    }
-  }
 `;
 export const VolumeContainer = styled.div`
   display: flex;
@@ -108,8 +105,34 @@ export const VolumeContainer = styled.div`
   gap: 15px;
 `;
 export const PreviousTrack = styled.span`
- ${FlexItems};
+  ${FlexItems};
 `;
 export const NextTrack = styled.span`
   ${FlexItems}
 `;
+export const MusicInfo = styled.div `
+  display: flex;
+  flex-direction: column;
+`
+export const SideArrow = styled.div`
+  position: relative;
+  right: 8px;
+  transition: 0.5s;
+  svg {
+    display: flex;
+    font-size: 2rem;
+    transform: rotate(-90deg);
+    background-color: inherit;
+  }
+  @media(min-width: 993px){
+    display: none;
+  }
+  @media (max-width: 500px) {
+    svg {
+      font-size: 1.5rem;
+    }
+  }
+`;
+
+
+

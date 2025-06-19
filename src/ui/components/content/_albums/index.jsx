@@ -23,10 +23,16 @@ export default function Albums() {
         {albums.map((album) => (
           <figure key={album.title}>
             <div className="ImageContainer">
-              <img src={img[album.image]} alt={album.title} />
+              <a href={album.spotify} target="_blank" rel="noopener noreferrer">
+                <img src={img[album.image]} alt={album.title} />
+              </a>
               <div className="Overlay">
                 <h1>{album.title}</h1>
-                <a href={album.spotify}target="_blank" rel="noopener noreferrer">
+                <a
+                  href={album.spotify}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   VIEW MORE
                 </a>
               </div>

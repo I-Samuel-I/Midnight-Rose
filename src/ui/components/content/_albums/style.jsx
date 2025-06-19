@@ -170,7 +170,11 @@ export const AlbumsList = styled.figure`
   .ImageContainer:hover .Overlay {
     opacity: 1;
   }
-
+  figure:nth-child(6) {
+    figcaption {
+      margin-bottom: 5%;
+    }
+  }
   @media (max-width: 1440px) {
     figure {
       img {

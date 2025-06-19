@@ -11,11 +11,17 @@ export default function Home() {
   return (
     <S.MainContainer>
       <Header />
-      <Intro />
+    
+        <Intro />
       <Content />
+   
+      
       <Top />
       <Music />
-      <Div />
+   
+        <Div />
+   
+      
       <Footer />
     </S.MainContainer>
   );

@@ -9,13 +9,13 @@ export const ButtonContainer = styled.div`
   button {
     padding: 20px;
     border: none;
+    transition: 0.5s;
     border: solid 1px #4e4e4e;
     border-radius: 50px;
     background-color: #1b1b1d;
-
+    
     &:hover {
       cursor: pointer;
-      transition: 0.3s;
       transform: scale(1.1);
       background-color: #0e0e0f;
     }

@@ -10,7 +10,7 @@ export const SocialsContainer = styled.div`
       ${HoverImage}
       width: 2.5rem;
       pointer-events:all;
-
+      
     }
     p {
       font-size: 2rem;
