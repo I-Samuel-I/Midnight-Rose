@@ -12,7 +12,6 @@ export default function Nav() {
   function handleMenu() {
     setMenuDisplay((prev) => !prev);
   }
-
   return (
     <>
       <S.NavContainer>
@@ -28,13 +27,13 @@ export default function Nav() {
         <S.InfoMenu>
           <ul>
             <li>
-              <a href="#about">ABOUT</a>
+              <a href="/#about">ABOUT</a>
             </li>
             <li>
-              <a href="#musics">WORKS</a>
+              <a href="/#musics">WORKS</a>
             </li>
             <li>
-              <a href="#albums">ALBUMS</a>
+              <a href="/#albums">ALBUMS</a>
             </li>
             <li>
               <button onClick={() => navigate("/contact")}>CONTACT</button>

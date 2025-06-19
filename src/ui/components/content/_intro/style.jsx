@@ -120,7 +120,7 @@ export const Cube3DContainer = styled.div`
   bottom: 350px;
   user-select: none;
   touch-action: none;
-  
+
   @media (max-height: 768px) {
     bottom: 75px;
   }
