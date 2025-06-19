@@ -125,7 +125,7 @@ export const SideArrow = styled.div`
     background-color: inherit;
   }
   @media(min-width: 993px){
-    display: none;
+    display: none; 
   }
   @media (max-width: 500px) {
     svg {

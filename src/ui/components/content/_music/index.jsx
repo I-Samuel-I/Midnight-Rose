@@ -99,6 +99,7 @@ export default function Music() {
   const toogleSideArrow = () => {
     setArrow((prev) => !prev);
   };
+  const isMobile = window.innerWidth <= 992;
 
   return (
     <S.MusicContainer>
@@ -106,7 +107,7 @@ export default function Music() {
         <figure key={currentMusic.title}>
           <img src={currentMusic.image} alt={currentMusic.title} />
           <S.InfoContainer>
-            {Arrow && (
+            {(Arrow || !isMobile) && (
               <S.MusicInfo>
                 <figcaption>{currentMusic.title}</figcaption>
                 <S.ControlsContainer>
