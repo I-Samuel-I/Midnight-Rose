@@ -4,6 +4,7 @@ export const AlbumsContainer = styled.section`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 5%;
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -22,14 +23,31 @@ export const AlbumsAside = styled.aside`
     gap: 25px;
     margin: 10% 0% 0% 5%;
     a {
-      font-size: 2.5rem;
+      position: relative;
+      font-size: 2rem;
       font-weight: bold;
       color: white;
       text-decoration: none;
+      transition: 0.5s;
 
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        background-color: #014862;
+        left: 0;
+        bottom: 0px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s ease-out;
+      }
       &:hover {
-        cursor: pointer;
         color: #014862;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
       }
     }
   }
@@ -208,8 +226,8 @@ export const AlbumsList = styled.figure`
       }
     }
   }
-  @media(max-width: 600px){
-     .Overlay {
+  @media (max-width: 600px) {
+    .Overlay {
       display: none;
     }
   }

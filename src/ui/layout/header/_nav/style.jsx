@@ -1,4 +1,33 @@
-import styled from "styled-components";
+import styled, { css, keyframes } from "styled-components";
+
+const slideUp = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+`;
+
+const TextHover = css`
+  background: linear-gradient(to right, #014862 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: background-position 0.4s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    background-position: left bottom;
+  }
+`;
 
 export const NavContainer = styled.nav`
   display: flex;
@@ -11,21 +40,8 @@ export const NavContainer = styled.nav`
 
   a {
     display: flex;
-    text-decoration: none;
-    color: white;
-    &:hover {
-      cursor: pointer;
-      color: #014862;
-      /* color: #2f5974; */
-      /* color: #3041bb; */
-    }
     img {
       width: 50px;
-
-      &:hover {
-        transform: scale(1.2);
-        transition: 0.2s;
-      }
     }
   }
   @media (max-width: 768px) {
@@ -58,7 +74,6 @@ export const DisplayButton = styled.button`
   color: white;
   background-color: transparent;
   transition: color 0.5s, transform 0.2s, background-color 0.2s;
-  
 
   &::after {
     z-index: -1;
@@ -73,7 +88,6 @@ export const DisplayButton = styled.button`
     transform: translate(-100%, 0) rotate(10deg);
     transform-origin: top left;
     transition: 0.2s transform ease-out;
-    
   }
 
   &:hover::after {
@@ -100,12 +114,12 @@ export const DisplayButton = styled.button`
 `;
 
 export const InfoMenu = styled.div`
-  z-index: 2;
+  z-index: 5;
   position: fixed;
   display: flex;
   justify-content: space-between;
   width: 400px;
-  height: 60vh;
+  height: 50vh;
   top: 25px;
   right: 0px;
   border: solid 2px #4e4e4e;
@@ -119,18 +133,15 @@ export const InfoMenu = styled.div`
       margin-bottom: 10%;
       list-style: none;
       font-size: 3rem;
+      animation: ${slideUp} 1s ease forwards;
+      opacity: 1;
 
       a {
+        ${TextHover};
         display: flex;
         font-weight: bold;
         text-decoration: none;
-        color: white;
-        &:hover {
-          cursor: pointer;
-          color: #014862;
-          /* color: #2f5974; */
-          /* color: #3041bb; */
-        }
+
         img {
           width: 50px;
 
@@ -143,12 +154,11 @@ export const InfoMenu = styled.div`
     }
   }
   button:nth-child(1) {
+    ${TextHover};
     border: none;
     font-size: 3rem;
     font-weight: bold;
     font-family: "Assistant";
-    color: white;
-    background-color: inherit;
 
     @media (max-width: 600px) {
       font-size: 2.5rem;
@@ -162,6 +172,12 @@ export const InfoMenu = styled.div`
     svg {
       font-size: 4rem;
       color: white;
+      transition: 0.5s;
+
+      &:hover {
+        color: #014862;
+        
+      }
     }
 
     @media (max-width: 600px) {
@@ -175,8 +191,8 @@ export const InfoMenu = styled.div`
     top: 20px;
   }
   @media (max-width: 600px) {
+    height: 45vh;
     width: 350px;
-    height: 65vh;
     ul {
       li {
         font-size: 2.5rem;

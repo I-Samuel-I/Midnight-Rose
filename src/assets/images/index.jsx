@@ -23,6 +23,7 @@ import cubeElf from "../../../public/images/cube/CUBE-ELF.jpeg";
 import cubeRebellion from "../../../public/images/cube/CUBE-REBELLION.jpeg";
 import cubeRockstar from "../../../public/images/cube/CUBE-ROCKSTAR.png";
 import cubeRule from "../../../public/images/cube/CUBE-RULE.jpg";
+import error from "../../../public/images/Error.png"
 
 
 
@@ -30,5 +31,6 @@ import cubeRule from "../../../public/images/cube/CUBE-RULE.jpg";
 export { 
     logo, github,linkedin, instagram, gmail, ado,adoPreview, odo, night, readymade, pierrot, show,himawari, kyougen, uta, utattemita, adoShow, zanmu, adoBest,
     cubeUsseewa, cubeAishite, cubeElf, cubeRebellion, cubeRockstar, cubeRule,
+    error
     
 };

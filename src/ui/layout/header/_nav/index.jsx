@@ -21,7 +21,6 @@ export default function Nav() {
         </a>
         <li>
           <S.DisplayButton onClick={handleMenu}>MENU</S.DisplayButton>
-         
         </li>
       </S.NavContainer>
 

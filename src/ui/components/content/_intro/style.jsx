@@ -6,8 +6,10 @@ const autoRotate = keyframes`
 `;
 
 export const IntroContainer = styled.section`
+  position: sticky;
   display: flex;
   align-items: center;
+  top: 0;
   height: 100vh;
   margin: 0% 1% 0% 1%;
   article {
@@ -94,21 +96,18 @@ export const IntroContainer = styled.section`
   }
   @media (max-width: 400px) {
     article {
-    
-
-      h1{
+      h1 {
         font-size: 3.2rem;
       }
     }
   }
 
-  @media(max-height: 750px){
+  @media (max-height: 750px) {
     article {
       left: 30%;
       bottom: 0px;
     }
   }
-
 `;
 export const Content = styled.div`
   display: flex;
@@ -118,20 +117,14 @@ export const Cube3DContainer = styled.div`
   position: absolute;
   display: flex;
   left: 50%;
-  bottom: 150px;
+  bottom: 350px;
   user-select: none;
   touch-action: none;
 
-  @media (max-width: 992px) {
-    bottom: 150px;
-  }
-  @media (max-width: 768px) {
-    bottom: 125px;
-  }
   @media (max-width: 600px) {
     bottom: 250px;
   }
-  @media(max-height: 750px){
+  @media (max-height: 750px) {
     bottom: 75px;
   }
 `;

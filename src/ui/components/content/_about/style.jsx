@@ -13,7 +13,7 @@ export const AboutContainer = styled.section`
   article {
     padding: 10px;
     height: 100%;
-    margin-top: 1%;
+    margin: 1%;
     h1 {
       font-size: 5rem;
       margin-bottom: 2%;

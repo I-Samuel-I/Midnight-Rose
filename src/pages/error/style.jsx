@@ -7,9 +7,9 @@ export const ErrorContainer = styled.main`
   justify-content: center;
   height: 100vh;
   width: 100%;
-  h1 {
+  img {
     
-    font-size: 15rem;
+   width: 50%;
   }
   span {
     display: flex;
@@ -33,8 +33,8 @@ export const ErrorContainer = styled.main`
     }
   }
   @media (max-width: 1200px) {
-    h1 {
-      font-size: 12rem;
+    img{
+      width: 70%;
     }
     span {
       p {
@@ -43,9 +43,6 @@ export const ErrorContainer = styled.main`
     }
   }
   @media(max-width: 992px){
-     h1 {
-      font-size: 10rem;
-    }
     span {
       p {
         font-size: 1.5rem;
@@ -56,13 +53,16 @@ export const ErrorContainer = styled.main`
     }
   }
   @media(max-width: 768px){
+     img{
+      width: 85%;
+    }
     span{
       flex-direction: column;
     }
   }
   @media(max-width: 600px){
-    h1{
-      font-size: 8rem;
+     img{
+      width: 100%;
     }
     span{
       p{
@@ -75,9 +75,6 @@ export const ErrorContainer = styled.main`
     }
   }
   @media(max-width: 400px){
-    h1{
-      font-size: 7rem;
-    }
     span{
       p{
         text-align: center;

@@ -14,6 +14,10 @@ export const LogoContainer = styled.div`
     font-weight: bold;
     color: white;
     background-color: inherit;
+
+    &:hover{
+      cursor: pointer;
+    }
   }
   @media(max-width: 992px){
     img{

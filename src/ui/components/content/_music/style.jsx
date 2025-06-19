@@ -1,9 +1,18 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
+const FlexItems = css`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 export const MusicContainer = styled.section`
-  
-  background-color: #222222;
+  position: fixed;
+  z-index: 20;
+  bottom: 0;
   margin: 30% 0% 5% 0%;
+  border-radius: 10px;
+  background-color: #222222;
 `;
 export const SingleMusic = styled.div`
   display: flex;
@@ -11,15 +20,15 @@ export const SingleMusic = styled.div`
   figure {
     display: flex;
     align-items: center;
-    height: 100%;
+
     gap: 20px;
 
     figcaption {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-weight: bold;
     }
     img {
-      width: 100px;
+      width: 75px;
     }
   }
 
@@ -29,7 +38,7 @@ export const SingleMusic = styled.div`
   }
   input[type="range"] {
     -webkit-appearance: none;
-    width: 125px;
+    width: 75%;
     height: 8px;
     background: #343438;
     border-radius: 30px;
@@ -45,28 +54,23 @@ export const SingleMusic = styled.div`
     border-radius: 50%;
     cursor: pointer;
   }
-
-  @media (max-width: 500px) {
+  @media (max-width: 992px) {
+    input[type="range"] {
+      width: 70%;
+    }
     figure {
       figcaption {
-        font-size: 1.1rem;
-      }
-      img {
-        width: 85px;
+        font-size: 1rem;
       }
     }
+  }
   @media (max-width: 400px) {
     figure {
       figcaption {
         font-size: 0.9rem;
       }
     }
-    input[type="range"] {
-      width: 100%;
-      margin-right: 5%;
-    }
   }
-}
 `;
 export const InfoContainer = styled.div`
   display: flex;
@@ -76,17 +80,22 @@ export const InfoContainer = styled.div`
   gap: 10px;
 
   @media (max-width: 600px) {
-    width: 100%;
     justify-content: center;
   }
 `;
 export const ControlsContainer = styled.div`
-  display: flex;
+  ${FlexItems};
   gap: 20px;
-  @media (max-width: 500px) {
+  padding-bottom: 2px;
+
+  svg {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 992px) {
     gap: 15px;
     svg {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
 `;
@@ -95,5 +104,9 @@ export const VolumeContainer = styled.div`
   align-items: center;
   gap: 15px;
 `;
-export const PreviousTrack = styled.span``;
-export const NextTrack = styled.span``;
+export const PreviousTrack = styled.span`
+ ${FlexItems};
+`;
+export const NextTrack = styled.span`
+  ${FlexItems}
+`;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ButtonContainer = styled.div`
+  z-index: 20;
   position: fixed;
   top: 90%;
   right: 20px;
@@ -51,5 +52,4 @@ export const ButtonContainer = styled.div`
   @media (max-height: 450px) {
     top: 78%;
   }
-
 `;
