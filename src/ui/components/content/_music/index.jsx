@@ -23,7 +23,7 @@ export default function Music() {
   const [Arrow, setArrow] = useState(false);
   const [PreviousVolume, setPreviousVolume] = useState(0.02); // Stores volume before muting
   const [CurrentIndex, setCurrentIndex] = useState(0); // Index of the current song
-
+  const isMobile = window.innerWidth <= 992;
   // Audio DOM reference
   const audioRef = useRef(null);
 
@@ -99,7 +99,6 @@ export default function Music() {
   const toogleSideArrow = () => {
     setArrow((prev) => !prev);
   };
-  const isMobile = window.innerWidth <= 992;
 
   return (
     <S.MusicContainer>

@@ -124,6 +124,7 @@ export const InfoMenu = styled.div`
   height: 50vh;
   top: 25px;
   right: 0px;
+  margin-right: 1%;
   border: solid 2px #4e4e4e;
   border-radius: 30px;
   background-color: #1b1b1d;
@@ -161,18 +162,20 @@ export const InfoMenu = styled.div`
     font-size: 3rem;
     font-weight: bold;
     font-family: "Assistant";
-
     @media (max-width: 600px) {
       font-size: 2.5rem;
     }
   }
   button:nth-child(2) {
+    position: fixed;
     height: 10%;
-    margin: 5% 5% 0% 0%;
+    right: -50px;
+
+    margin: 0% 5% 0% 0%;
     border: none;
-    background-color: inherit;
+    background-color: transparent;
     svg {
-      font-size: 4rem;
+      font-size: 3.5rem;
       color: white;
       transition: 0.5s;
 
@@ -180,30 +183,44 @@ export const InfoMenu = styled.div`
         color: #014862;
       }
     }
-
-    @media (max-width: 600px) {
-      svg {
-        font-size: 3rem;
-      }
+  }
+  @media (max-width: 1440px) {
+    button:nth-child(2) {
+      right: -25px;
     }
   }
-
   @media (max-width: 768px) {
     top: 20px;
+    button:nth-child(2) {
+      right: -15px;
+    }
   }
   @media (max-width: 600px) {
     height: 45vh;
-    width: 350px;
+    width: 325px;
     ul {
       li {
         font-size: 2.5rem;
       }
     }
+    button:nth-child(2) {
+      right: 0px;
+      svg {
+        font-size: 3.2rem;
+      }
+    }
   }
   @media (max-width: 500px) {
-    top: 0px;
+    margin-right: 2%;
+    top: 10px;
   }
   @media (max-width: 400px) {
-    width: 100%;
+    width: 85%;
+
+    button:nth-child(2) {
+      svg {
+        font-size: 3rem;
+      }
+    }
   }
 `;

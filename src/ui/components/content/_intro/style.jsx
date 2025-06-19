@@ -105,7 +105,7 @@ export const IntroContainer = styled.section`
   @media (max-height: 750px) {
     article {
       left: 30%;
-      bottom: 0px;
+      bottom: 50px;
     }
   }
 `;
@@ -120,12 +120,12 @@ export const Cube3DContainer = styled.div`
   bottom: 350px;
   user-select: none;
   touch-action: none;
-
-  @media (max-width: 600px) {
-    bottom: 250px;
-  }
-  @media (max-height: 750px) {
+  
+  @media (max-height: 768px) {
     bottom: 75px;
+  }
+  @media (max-width: 600px) {
+    bottom: 200px;
   }
 `;
 
