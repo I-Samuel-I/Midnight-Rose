@@ -1,5 +1,3 @@
-import { useEffect, useRef, useState } from "react";
-import { music } from "./musicData";
 import * as S from "./style";
 
 //Import svg/icons (https://fontawesome.com)
@@ -15,6 +13,8 @@ import {
   faBackwardStep,
   faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useRef, useState } from "react";
+import { music } from "./musicData";
 
 export default function Music() {
   // Manage player state

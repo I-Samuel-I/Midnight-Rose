@@ -1,9 +1,11 @@
-import { musics } from "./musicsData";
+
 import * as img from "../../../../assets/images/index";
 import * as S from "./style";
 
+//Import svg/icons (https://fontawesome.com)
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { musics } from "./musicsData";
 
 export default function Musics() {
   return (

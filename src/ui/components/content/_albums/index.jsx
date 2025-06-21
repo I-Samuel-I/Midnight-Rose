@@ -1,6 +1,7 @@
-import { albums } from "./albumsData";
 import * as img from "../../../../assets/images/index";
 import * as S from "./style";
+
+import { albums } from "./albumsData";
 export default function Albums() {
   return (
     <S.AlbumsContainer>

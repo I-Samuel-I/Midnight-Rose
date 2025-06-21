@@ -1,11 +1,10 @@
-import { Route, Routes} from "react-router-dom";
 import Home from "../pages/home";
 import Error from "../pages/error";
 import Contact from "../pages/contact";
 
+import { Route, Routes} from "react-router-dom";
 
 export default function AppRoutes() {
-
   return (
     <Routes>
       <Route path="/" element={<Home />} />

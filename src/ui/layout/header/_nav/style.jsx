@@ -229,11 +229,14 @@ export const InfoMenu = styled.div`
   }
   @media(max-height: 700px){
     height: 70vh;
+    button:nth-child(2) {
+      top: 35px;
+    }
   }
   @media(max-height: 600px){
-    height: 85vh;
+    height: 80vh;
   }
-  @media(max-height: 600px){
+  @media(max-height: 500px){
     height: 92vh;
   }
 `;

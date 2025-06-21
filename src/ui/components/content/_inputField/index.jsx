@@ -1,7 +1,8 @@
+import * as S from "./style";
+
 import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import swal from "sweetalert2";
-import * as S from "./style";
 
 export default function InputField() {
   // Form reference for EmailJS
@@ -30,7 +31,6 @@ export default function InputField() {
         background: "#222222",
         color: "#fff",
       });
-
       return;
     }
 

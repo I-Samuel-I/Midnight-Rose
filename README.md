@@ -4,7 +4,10 @@
 
 #### This project is a fan-made website dedicated to the Japanese singer Ado. The goal is to showcase a bit of her musical career, highlighting some of her most popular songs and albums. 
 
-<img width="800px" src="/public/images/Page.png">
+<video width="800" controls>
+  <source src="/src/assets/videos/2025-06-21 19-23-00.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## 💻 Online Page: https://midnight-rose.vercel.app
 

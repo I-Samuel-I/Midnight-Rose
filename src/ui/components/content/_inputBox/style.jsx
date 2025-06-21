@@ -42,11 +42,8 @@ export const BoxContainer = styled.section`
     position: relative;
     height: 70vh;
     bottom: 25px;
-    div {
-      width: 30%;
-    }
   }
   @media (max-height: 650px) {
-    bottom: 40px;
+    bottom: 30px;
   }
 `;

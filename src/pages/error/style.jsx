@@ -8,7 +8,6 @@ export const ErrorContainer = styled.main`
   height: 100vh;
   width: 100%;
   img {
-    
    width: 50%;
   }
   span {

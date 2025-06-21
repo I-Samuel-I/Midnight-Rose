@@ -1,7 +1,8 @@
-import { useEffect } from "react";
 import Lenis from "lenis";
 import Home from "../../pages/home";
 import AppRoutes from "../../routes";
+
+import { useEffect } from "react";
 
 export default function Main() {
  

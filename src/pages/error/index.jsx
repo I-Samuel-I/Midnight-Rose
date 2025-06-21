@@ -2,6 +2,7 @@ import * as img from "../../assets/images/index"
 import * as S from "./style";
 
 import { useNavigate } from "react-router";
+
 export default function Error() {
   const navigate = useNavigate();
   return (

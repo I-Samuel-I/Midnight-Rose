@@ -1,40 +1,25 @@
-import { useRef, useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import * as img from "../../../../assets/images/index";
 import * as S from "./style";
 
+import { useRef, useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 export default function Intro() {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const isDragging = useRef(false);
   const lastPosition = useRef({ x: 0, y: 0 });
   const velocity = useRef({ x: 0, y: 0 });
   const animationFrameId = useRef(null);
-
-  const handleStart = (x, y) => {
-    isDragging.current = true;
-    lastPosition.current = { x, y };
-    if (animationFrameId.current)
-      cancelAnimationFrame(animationFrameId.current);
-  };
-
+  // Called when the user starts a **touch interaction** (mobile/tablet)
   const handleTouchStart = (e) => {
     const touch = e.touches[0];
-    handleStart(touch.clientX, touch.clientY);
+    handleStart(touch.clientX, touch.clientY); // Pass the X and Y positions to start dragging
   };
-
+  // Called when the user starts a **mouse interaction** (desktop)
   const handleMouseDown = (e) => {
-    handleStart(e.clientX, e.clientY);
+    handleStart(e.clientX, e.clientY); // Pass the X and Y positions to start dragging
   };
-
-  const updateRotation = (deltaX, deltaY) => {
-    setRotation((prev) => ({
-      x: prev.x - deltaY * 0.2,
-      y: prev.y - deltaX * 0.2,
-    }));
-    velocity.current = { x: -deltaY * 0.2, y: -deltaX * 0.2 };
-  };
-
+  // Handles touch move event
   const handleTouchMove = (e) => {
     if (!isDragging.current) return;
     const touch = e.touches[0];
@@ -43,7 +28,7 @@ export default function Intro() {
     updateRotation(deltaX, deltaY);
     lastPosition.current = { x: touch.clientX, y: touch.clientY };
   };
-
+  // Handles mouse move event
   const handleMouseMove = (e) => {
     if (!isDragging.current) return;
     const deltaX = e.clientX - lastPosition.current.x;
@@ -52,6 +37,34 @@ export default function Intro() {
     lastPosition.current = { x: e.clientX, y: e.clientY };
   };
 
+  // Starts dragging event
+  const handleStart = (x, y) => {
+    isDragging.current = true;
+    lastPosition.current = { x, y };
+    if (animationFrameId.current)
+      cancelAnimationFrame(animationFrameId.current);
+  };
+
+  // Updates rotation based on movement delta
+  const updateRotation = (deltaX, deltaY) => {
+    setRotation((prev) => ({
+      x: prev.x - deltaY * 0.2,
+      y: prev.y - deltaX * 0.2,
+    }));
+    velocity.current = { x: -deltaY * 0.2, y: -deltaX * 0.2 };
+  };
+  // Ends touch event and applies inertia
+  const handleTouchEnd = () => {
+    isDragging.current = false;
+    applyInertia();
+  };
+  // Ends mouse event and applies inertia
+  const handleMouseUp = () => {
+    isDragging.current = false;
+    applyInertia();
+  };
+
+  // Applies inertia effect after releasing drag
   const applyInertia = () => {
     velocity.current.x *= 0.97;
     velocity.current.y *= 0.97;
@@ -69,17 +82,7 @@ export default function Intro() {
     }
   };
 
-  const handleTouchEnd = () => {
-    isDragging.current = false;
-    applyInertia();
-  };
-
-  const handleMouseUp = () => {
-    isDragging.current = false;
-    applyInertia();
-  };
-
-  //Detect mouse or touch interaction on the cube
+  // Adds event listeners for mouse and touch on component mount
   useEffect(() => {
     document.addEventListener("mousemove", handleMouseMove);
     document.addEventListener("mouseup", handleMouseUp);
