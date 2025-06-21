@@ -59,12 +59,26 @@ export const InputContainer = styled.article`
       }
     }
   }
-  @media(max-width: 600px){
-    h1{
+  @media (max-width: 600px) {
+    h1 {
       font-size: 2rem;
     }
-     input[type="submit"] {
+    input[type="submit"] {
       padding: 15px;
-     }
+    }
+  }
+
+  @media (max-height: 750px) {
+    form {
+      input {
+        padding: 15px;
+        &[type="submit"] {
+          padding: 15px;
+        }
+      }
+      textarea {
+        padding: 15px;
+      }
+    }
   }
 `;

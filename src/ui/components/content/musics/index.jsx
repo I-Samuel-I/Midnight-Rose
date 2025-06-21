@@ -8,7 +8,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 export default function Musics() {
   return (
     <S.MusicContainer id="musics">
-      <h1>MUSICS</h1>
+      <h1>SONGS</h1>
       <figure>
         {musics.map((music) => (
           <div className="ImageContainer" key={music.title}>

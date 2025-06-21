@@ -6,10 +6,9 @@ export const BoxContainer = styled.section`
   justify-content: center;
   align-items: center;
   div {
-    
     width: 35%;
     padding: 25px;
-    
+
     border-radius: 15px;
     background-color: #222222;
   }
@@ -18,12 +17,12 @@ export const BoxContainer = styled.section`
       width: 40%;
     }
   }
-   @media (max-width: 1200px) {
+  @media (max-width: 1200px) {
     div {
       width: 50%;
     }
   }
-   @media (max-width: 992px) {
+  @media (max-width: 992px) {
     div {
       width: 65%;
     }
@@ -38,5 +37,16 @@ export const BoxContainer = styled.section`
     div {
       width: 90%;
     }
+  }
+  @media (max-height: 750px) {
+    position: relative;
+    height: 70vh;
+    bottom: 25px;
+    div {
+      width: 30%;
+    }
+  }
+  @media (max-height: 650px) {
+    bottom: 40px;
   }
 `;

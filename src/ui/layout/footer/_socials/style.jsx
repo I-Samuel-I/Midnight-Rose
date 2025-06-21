@@ -2,6 +2,11 @@ import styled from "styled-components";
 import { HoverImage } from "../../../../assets/theme/style";
 
 export const SocialsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   div {
     display: flex;
     gap: 1.3rem;
@@ -9,20 +14,15 @@ export const SocialsContainer = styled.div`
     img {
       ${HoverImage}
       width: 2.5rem;
-      pointer-events:all;
-      
+
+      pointer-events: all;
     }
     p {
       font-size: 2rem;
       font-weight: bold;
-      margin-top: 3%;
+      margin: 3% 0% 3% 0%;
     }
   }
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
 
   @media (max-width: 600px) {
     div {
@@ -41,6 +41,14 @@ export const SocialsContainer = styled.div`
       }
       p {
         font-size: 1.5rem;
+      }
+    }
+  }
+  @media (max-height: 750px) {
+    div {
+      margin-top: 0%;
+      p {
+        margin-bottom: 5%;
       }
     }
   }

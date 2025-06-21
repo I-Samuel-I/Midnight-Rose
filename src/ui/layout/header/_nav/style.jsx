@@ -223,4 +223,17 @@ export const InfoMenu = styled.div`
       }
     }
   }
+
+  @media(max-height: 850px){
+    height: 60vh;
+  }
+  @media(max-height: 700px){
+    height: 70vh;
+  }
+  @media(max-height: 600px){
+    height: 85vh;
+  }
+  @media(max-height: 600px){
+    height: 92vh;
+  }
 `;

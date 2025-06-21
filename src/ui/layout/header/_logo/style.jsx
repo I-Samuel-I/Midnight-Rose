@@ -68,4 +68,9 @@ export const LogoContainer = styled.div`
       font-size: 1.5rem;
     }
   }
+  @media (max-height: 750px) {
+    button{
+      font-size: 3.5rem;
+    }
+  }
 `;
