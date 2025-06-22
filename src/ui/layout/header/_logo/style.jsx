@@ -23,12 +23,16 @@ export const LogoContainer = styled.div`
     display: flex;
     gap: 5px;
   }
+
+  @media(max-width: 1200px){
+    button{
+      font-size: 3rem;
+    }
+  }
+
   @media (max-width: 992px) {
     img {
       width: 75px;
-    }
-    button {
-      font-size: 3rem;
     }
   }
   @media (max-width: 768px) {
@@ -66,11 +70,6 @@ export const LogoContainer = styled.div`
   @media (max-width: 425px) {
     button {
       font-size: 1.5rem;
-    }
-  }
-  @media (max-height: 750px) {
-    button{
-      font-size: 3.5rem;
     }
   }
 `;

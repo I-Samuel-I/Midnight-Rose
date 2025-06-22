@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BoxContainer = styled.section`
   display: flex;
-  height: 75vh;
+  height: 85vh;
   justify-content: center;
   align-items: center;
   div {
@@ -24,7 +24,7 @@ export const BoxContainer = styled.section`
   }
   @media (max-width: 992px) {
     div {
-      width: 65%;
+      width: 60%;
     }
   }
   @media (max-width: 768px) {
@@ -38,12 +38,8 @@ export const BoxContainer = styled.section`
       width: 90%;
     }
   }
-  @media (max-height: 750px) {
-    position: relative;
-    height: 70vh;
-    bottom: 25px;
+  @media (max-height: 750px) and (min-width: 1000px) {
+    height: 75vh;
   }
-  @media (max-height: 650px) {
-    bottom: 30px;
-  }
+ 
 `;
