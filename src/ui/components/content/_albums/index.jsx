@@ -1,6 +1,8 @@
 import * as img from "../../../../assets/images/index";
 import * as S from "./style";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { albums } from "./albumsData";
 export default function Albums() {
   return (
@@ -28,13 +30,12 @@ export default function Albums() {
                 <img src={img[album.image]} alt={album.title} />
               </a>
               <div className="Overlay">
-                <h1>{album.title}</h1>
-                <a
-                  href={album.spotify}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  VIEW MORE
+                <h1>{album.title}</h1>{" "}
+                <a href={album.spotify} target="_blank"rel="noopener noreferrer">
+                  <S.TextLink>
+                    VIEW MORE
+                    <FontAwesomeIcon icon={faArrowRight} />{" "}
+                  </S.TextLink>
                 </a>
               </div>
             </div>

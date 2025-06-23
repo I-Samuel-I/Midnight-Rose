@@ -23,7 +23,7 @@ export const MusicContainer = styled.section`
     margin: 0;
     border: none;
   }
-  .Overlay {    
+  .Overlay {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -53,24 +53,6 @@ export const MusicContainer = styled.section`
       font-weight: bold;
       text-decoration: none;
       color: white;
-      div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        height: 100%;
-        gap: 10px;
-        p {
-          font-size: 2rem;
-        }
-        svg {
-          width: 15%;
-          padding: 3px;
-          font-size: 1.3rem;
-          border-radius: 50px;
-          background-color: #1b1b1d;
-        }
-      }
     }
   }
   .ImageContainer:hover .Overlay {
@@ -127,26 +109,20 @@ export const MusicContainer = styled.section`
       display: flex;
       flex-direction: column;
       .ImageContainer {
-        display: flex;
-        justify-content: center;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
       img {
+        width: 90%;
         margin-bottom: 3%;
-        width: 95%;
         border: none;
       }
     }
     .Overlay {
-      h1 {
-        font-size: 5rem;
-      }
-      a {
-        div {
-          p {
-            font-size: 2rem;
-          }
-        }
-      }
+      display: none;
     }
   }
   @media (max-width: 600px) {
@@ -158,9 +134,41 @@ export const MusicContainer = styled.section`
         width: 95%;
         margin-bottom: 3%;
       }
-      .Overlay {
-        display: none;
-      }
+    }
+  }
+`;
+
+export const TextLink = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  gap: 10px;
+  p {
+    font-size: 2rem;
+  }
+
+  svg {
+    width: 15%;
+    padding: 3px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: #1b1b1d;
+  }
+
+  @media (max-width: 1440px) {
+    svg {
+      width: 18%;
+      padding: 2px;
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 992px) {
+    svg {
+      width: 22%;
+      font-size: 0.8rem;
+      padding: 1px;
     }
   }
 `;

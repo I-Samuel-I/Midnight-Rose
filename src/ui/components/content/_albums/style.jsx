@@ -29,7 +29,6 @@ export const AlbumsAside = styled.aside`
       color: white;
       text-decoration: none;
       transition: 0.5s;
-
       &::after {
         content: "";
         position: absolute;
@@ -161,6 +160,7 @@ export const AlbumsList = styled.figure`
       font-size: 4rem;
     }
     a {
+      width: 50%;
       font-size: 2rem;
       font-weight: bold;
       color: white;
@@ -183,16 +183,26 @@ export const AlbumsList = styled.figure`
     }
   }
   @media (max-width: 1200px) {
+    .Overlay{
+      h1{
+        font-size: 3rem;
+      }
+    }
     figure {
       img {
-        width: 550px;
+        width: 600px;
       }
     }
   }
   @media (max-width: 992px) {
+     .Overlay{
+      h1{
+        font-size: 2.5rem;
+      }
+    }
     figure {
       img {
-        width: 475px;
+        width: 500px;
       }
       figcaption {
         font-size: 2.5rem;
@@ -200,15 +210,20 @@ export const AlbumsList = styled.figure`
     }
   }
   @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     figure {
       display: flex;
       flex-direction: column;
       align-items: center;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .Overlay {
+        display: none;
+      }
       img {
-        width: 625px;
+        width: 90%;
       }
       figcaption {
         margin-top: 2%;
@@ -231,15 +246,45 @@ export const AlbumsList = styled.figure`
     }
   }
   @media (max-width: 600px) {
-    .Overlay {
-      display: none;
-    }
   }
   @media (max-width: 400px) {
     figure {
       figcaption {
         font-size: 1.3rem;
       }
+    }
+  }
+`;
+
+export const TextLink = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+  p {
+    font-size: 2rem;
+  }
+
+  svg {
+    width: 12%;
+    padding: 3px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: #1b1b1d;
+  }
+   @media(max-width: 1440px){
+    svg{
+      width: 11%;
+      padding: 2px;
+      font-size: 1rem;
+    }
+  }
+   @media(max-width: 992px){
+    svg{
+      width: 22%;
+      font-size: 0.8rem;
+      padding: 1px;
     }
   }
 `;

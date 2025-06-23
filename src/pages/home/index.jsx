@@ -19,10 +19,7 @@ export default function Home() {
       
       <Top />
       <Music />
-   
         <Div />
-   
-      
       <Footer />
     </S.MainContainer>
   );

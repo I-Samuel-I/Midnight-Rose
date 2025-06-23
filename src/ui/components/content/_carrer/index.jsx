@@ -16,7 +16,7 @@ export default function Carrer() {
             artists of her generation.
           </p>
         </article>
-         <img src={img.ado} alt="Ado" />
+         <img src={img.adoPerfil01} alt="Ado" />
       </S.CarrerContainer>
     </>
   );

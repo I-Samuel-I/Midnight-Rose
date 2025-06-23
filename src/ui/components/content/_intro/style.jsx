@@ -71,7 +71,8 @@ export const IntroContainer = styled.section`
     article {
       position: relative;
       left: 35%;
-      bottom: 100px;
+      bottom: 5%;
+     
       h1 {
         font-size: 4rem;
       }
@@ -80,6 +81,7 @@ export const IntroContainer = styled.section`
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     article {
+      bottom: 20%;
       gap: 10px;
       h1 {
         font-size: 3.5rem;
@@ -91,7 +93,7 @@ export const IntroContainer = styled.section`
     margin: 0% 3% 0% 3%;
     article {
       left: 30%;
-      bottom: 150px;
+       bottom: 20%;
     }
   }
   @media (max-width: 400px) {
@@ -102,12 +104,7 @@ export const IntroContainer = styled.section`
     }
   }
 
-  @media (max-height: 750px) {
-    article {
-      left: 30%;
-      bottom: 50px;
-    }
-  }
+ 
 `;
 export const Content = styled.div`
   display: flex;
@@ -122,10 +119,10 @@ export const Cube3DContainer = styled.div`
   touch-action: none;
 
   @media (max-height: 768px) {
-    bottom: 75px;
+    bottom: 100px;
   }
   @media (max-width: 600px) {
-    bottom: 200px;
+    bottom: 35%;
   }
 `;
 

@@ -1,4 +1,3 @@
-
 import * as img from "../../../../assets/images/index";
 import * as S from "./style";
 
@@ -14,17 +13,21 @@ export default function Musics() {
       <figure>
         {musics.map((music) => (
           <div className="ImageContainer" key={music.title}>
-            <a href="https://open.spotify.com/intl-pt/artist/6mEQK9m2krja6X1cfsAjfl?si=bEOcom0pREKOT9Bx1HxfGQ" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://open.spotify.com/intl-pt/artist/6mEQK9m2krja6X1cfsAjfl?si=bEOcom0pREKOT9Bx1HxfGQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={img[music.image]} alt={music.title} />
             </a>
 
             <div className="Overlay">
               <h1>{music.title}</h1>
               <a href={music.link} target="_blank" rel="noopener noreferrer">
-                <div>
+                <S.TextLink>
                   <p>VIEW MORE</p>
                   <FontAwesomeIcon icon={faArrowRight} />
-                </div>
+                </S.TextLink>
               </a>
             </div>
           </div>
