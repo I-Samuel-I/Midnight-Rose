@@ -1,8 +1,11 @@
-import Lenis from "lenis";
+
 import Home from "../../pages/home";
 import AppRoutes from "../../routes";
 
 import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Lenis from "lenis";
 
 export default function Main() {
  
@@ -17,12 +20,18 @@ export default function Main() {
     }
     requestAnimationFrame(raf);
   }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      easing: 'ease-in-out',
+      offset: 200,
+    });
+  }, []);
 
   return (
     <>
-      <AppRoutes>
-        <Home />
-      </AppRoutes>
+      <AppRoutes />
     </>
   );
 }

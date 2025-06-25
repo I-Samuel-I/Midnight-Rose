@@ -6,7 +6,7 @@ import Header from "../../ui/layout/header"
 export default function Contact() {
   return (
     <>
-      <S.MainContainer>
+      <S.MainContainer data-aos="fade-down"> 
         <Header/>
         <InputBox>
           <InputField />

@@ -20,7 +20,7 @@ export default function Top() {
   const scrollTop = () => {
     window.scrollTo({ top: 0 });
   };
-  
+
   useEffect(() => {
     window.addEventListener("scroll", handleVisibleButton);
     return () => {
@@ -30,10 +30,8 @@ export default function Top() {
   return (
     <>
       {showTop && (
-        <S.ButtonContainer>
-          <button onClick={scrollTop}>
-            <FontAwesomeIcon icon={faArrowUp} />
-          </button>
+        <S.ButtonContainer onClick={scrollTop}>
+          <FontAwesomeIcon icon={faArrowUp} />
         </S.ButtonContainer>
       )}
     </>

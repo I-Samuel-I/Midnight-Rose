@@ -7,16 +7,16 @@ import Musics from "./musics";
 export default function Content() {
   return (
     <S.ContentContainer>
-      <section>
+      <section data-aos="fade-up">
         <About />
       </section>
-      <section>
+      <section data-aos="fade-up">
         <Carrer />
       </section>
-      <section>
+      <section data-aos="fade-up">
         <Musics />
       </section>
-      <section>
+      <section data-aos="fade-up">
         <Albums />
       </section>
     </S.ContentContainer>

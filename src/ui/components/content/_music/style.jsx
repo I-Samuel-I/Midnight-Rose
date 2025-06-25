@@ -60,12 +60,11 @@ export const SingleMusic = styled.div`
       width: 70%;
     }
     figure {
-     
     }
   }
   @media (max-width: 500px) {
-    figure{
-      img{
+    figure {
+      img {
         width: 65px;
       }
     }
@@ -97,7 +96,6 @@ export const ControlsContainer = styled.div`
   svg {
     font-size: 1.2rem;
   }
-
 `;
 export const VolumeContainer = styled.div`
   display: flex;
@@ -110,29 +108,28 @@ export const PreviousTrack = styled.span`
 export const NextTrack = styled.span`
   ${FlexItems}
 `;
-export const MusicInfo = styled.div `
+export const MusicInfo = styled.div`
   display: flex;
   flex-direction: column;
-`
+`;
 export const SideArrow = styled.div`
+  display: flex;
+  align-items: center;
   position: relative;
+  height: 65px;
   right: 8px;
-  transition: 0.5s;
   svg {
     display: flex;
     font-size: 2rem;
     transform: rotate(-90deg);
     background-color: inherit;
   }
-  @media(min-width: 993px){
-    display: none; 
+  @media (min-width: 993px) {
+    display: none;
   }
   @media (max-width: 500px) {
     svg {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
   }
 `;
-
-
-

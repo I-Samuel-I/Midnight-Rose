@@ -205,6 +205,7 @@ export const InfoMenu = styled.div`
     }
     button:nth-child(2) {
       right: 0px;
+     
       svg {
         font-size: 3.2rem;
       }
@@ -216,7 +217,7 @@ export const InfoMenu = styled.div`
   }
   @media (max-width: 400px) {
     width: 85%;
-
+   
     button:nth-child(2) {
       svg {
         font-size: 3rem;

@@ -237,7 +237,7 @@ export const AlbumsList = styled.figure`
         justify-content: center;
       }
       img {
-        width: 95%;
+        width: 100%;
       }
 
       figcaption {

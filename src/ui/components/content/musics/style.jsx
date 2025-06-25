@@ -131,7 +131,7 @@ export const MusicContainer = styled.section`
     }
     figure {
       img {
-        width: 95%;
+        width: 100%;
         margin-bottom: 3%;
       }
     }

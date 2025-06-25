@@ -1,55 +1,36 @@
 import styled from "styled-components";
 
-export const ButtonContainer = styled.div`
-  z-index: 20;
+export const ButtonContainer = styled.button`
+  z-index: 10;
   position: fixed;
-  top: 90%;
+  bottom: 50px;
   right: 20px;
+  width: 65px;
+  height: 65px;
+  border: solid 1px #4e4e4e;
+  border-radius: 50%;
+  transition: 0.5s;
+  background-color: #1b1b1d;
 
-  button {
-    padding: 20px;
-    border: none;
-    transition: 0.5s;
-    border: solid 1px #4e4e4e;
-    border-radius: 50px;
-    background-color: #1b1b1d;
-    
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.1);
-      background-color: #0e0e0f;
-    }
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #0e0e0f;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+  }
+  svg {
+    width: 27px;
+    height: 27px;
+    color: white;
+  }
+
+  @media (max-width: 992px) {
+    bottom: 20px;
+    width: 57px;
+    height: 57px;
     svg {
-      font-size: 2rem;
-      color: white;
+      width: 23px;
+      height: 23px;
     }
-  }
-
-  @media (max-width: 768px) {
-    button {
-      svg {
-        font-size: 1.7rem;
-      }
-    }
-  }
-
-  @media (max-height: 900px) {
-    top: 87%;
-  }
-  @media (max-height: 650px) {
-    top: 82%;
-  }
-
-  @media (max-width: 600px) {
-    top: 90%;
-    button {
-      padding: 17px;
-      svg {
-        font-size: 1.3rem;
-      }
-    }
-  }
-  @media (max-height: 450px) {
-    top: 78%;
   }
 `;

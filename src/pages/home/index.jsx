@@ -10,17 +10,16 @@ import { Div } from "../../ui/layout/div/style";
 
 export default function Home() {
   return (
-    <S.MainContainer>
-      <Header />
-    
+    <>
+      <S.MainContainer data-aos="fade-down">
+        <Header />
         <Intro />
-      <Content />
-   
-      
-      <Top />
-      <Music />
+        <Content />
         <Div />
-      <Footer />
-    </S.MainContainer>
+        <Footer />
+      </S.MainContainer>
+      <Music />
+      <Top />
+    </>
   );
 }

@@ -35,12 +35,15 @@ npm run dev
 
 ## Built With
 
-Here are the main tools and libraries used to build this project:
+Here are the main tools aand libraries used to build this project:
 
 - ⚛️ [React](https://reactjs.org/) – JavaScript library for building user interfaces  
 - 📜 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Programming language used  
 - 💅 [Styled-Components](https://styled-components.com/) – For writing CSS-in-JS styling  
+- 🧭 [React Router](https://reactrouter.com/) – Library for routing and navigation in React  
+- 🎞️ [Lenis](https://github.com/studio-freight/lenis) – Smooth scroll library for modern web experiences  
 - 🎨 [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/) – Library for scroll animations  
+- 🔔 [SweetAlert2](https://sweetalert2.github.io/) – Beautiful, customizable pop-up alerts  
 - 📧 [EmailJS](https://www.emailjs.com/) – For sending emails directly from the client  
 - 🎸 [Font Awesome](https://fontawesome.com/) – Icon toolkit used for UI icons  
 

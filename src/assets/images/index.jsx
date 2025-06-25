@@ -4,7 +4,7 @@ import linkedin from "../../../public/images/socials/LINKEDIN-SOCIAL.png";
 import instagram from "../../../public/images/socials/INSTAGRAM-SOCIAL.png";
 import gmail from "../../../public/images/socials/GMAIL-SOCIAL.png";
 import adoPerfil01 from "../../../public/images/perfil/ADO01.png";
-import adoPerfil02 from "../../../public/images/perfil/test02.png";
+import adoPerfil02 from "../../../public/images/perfil/ADO03.png";
 import odo from "../../../public/images/musics/ADO-ODO.jpg";
 import night from "../../../public/images/musics/ADO-NIGHT.jpg";
 import readymade from "../../../public/images/musics/ADO-READYMADE.jpg";
