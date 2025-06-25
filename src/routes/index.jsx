@@ -1,15 +1,19 @@
-import Home from "../pages/home";
 import Error from "../pages/error";
-import Contact from "../pages/contact";
 
-import { Route, Routes} from "react-router-dom";
+import { Suspense, lazy } from "react";
+import { Route, Routes } from "react-router-dom";
+import Loading from "../pages/loading";
 
 export default function AppRoutes() {
+  const Home = lazy(() => import("../pages/home"));
+  const Contact = lazy(() => import("../pages/contact"));
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/*" element={<Error />} />
-    </Routes>
+    <Suspense fallback={<Loading/>}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </Suspense>
   );
 }

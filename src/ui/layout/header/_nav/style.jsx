@@ -168,9 +168,8 @@ export const InfoMenu = styled.div`
   }
   button:nth-child(2) {
     position: fixed;
-    height: 10%;
+    height: 1%;
     right: -50px;
-
     margin: 0% 5% 0% 0%;
     border: none;
     background-color: transparent;
@@ -189,10 +188,15 @@ export const InfoMenu = styled.div`
       right: -25px;
     }
   }
+   @media (max-width: 992px) {
+    button:nth-child(2) {
+      right: -20px;
+    }
+  }
   @media (max-width: 768px) {
     top: 20px;
     button:nth-child(2) {
-      right: -15px;
+      right: -5px;
     }
   }
   @media (max-width: 600px) {
@@ -212,8 +216,8 @@ export const InfoMenu = styled.div`
     }
   }
   @media (max-width: 500px) {
-    margin-right: 2%;
-    top: 10px;
+    margin-right: 1%;
+    top: 0px;
   }
   @media (max-width: 400px) {
     width: 85%;
